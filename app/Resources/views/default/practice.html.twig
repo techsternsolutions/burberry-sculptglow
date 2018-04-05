@@ -1,0 +1,416 @@
+{% extends 'base.html.twig' %}
+
+{% block viewport %}<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">{% endblock %}
+
+{% block body %}
+<div class="row">
+        <div class="slider">
+            <div class="left-arrow arrow" style="display: none"></div>
+            <div class="toolbar top" style="visibility: hidden" data-pos="cheek" >
+
+                <a href="#" class="col-xs-3 strobe contour" data-key="eye">
+                    <img src="{{ asset("bundles/app/images/practice-eye.png") }}">
+                    <span>{% trans %}practice.area.eye{% endtrans %}</span>
+                </a>
+                <a href="#" class="col-xs-3 strobe contour" data-key="cheek">
+                    <img src="{{ asset("bundles/app/images/practice-cheekbone.png") }}">
+                    <span>{% trans %}practice.area.cheekbone{% endtrans %}</span>
+                </a>
+                <a href="#" class="col-xs-3 strobe contour" data-key="nose">
+                    <img src="{{ asset("bundles/app/images/practice-nose.png") }}">
+                    <span>{% trans %}practice.area.nose{% endtrans %}</span>
+                </a>
+                <a href="#" class="col-xs-3 strobe" data-key="bow" data-group="jawline+bow" style="display: none">
+                    <img src="{{ asset("bundles/app/images/practice-jawline.png") }}">
+                    <span>{% trans %}practice.area.bow{% endtrans %}</span>
+                </a>
+                <a href="#" class="col-xs-3 contour" data-key="jawline" data-group="jawline+bow">
+                    <img src="{{ asset("bundles/app/images/practice-jawline.png") }}">
+                    <span>{% trans %}practice.area.jawline{% endtrans %}</span>
+                </a>
+
+            </div>
+            <div class="right-arrow arrow" style="display: none"></div>
+        </div>
+
+
+
+
+    <div id="wrapper">
+        <canvas data-area="background" id="final"></canvas>
+
+        <canvas data-area="cheek" data-tool="contour"></canvas>
+        <canvas data-area="jawline" data-tool="contour"></canvas>
+        <canvas data-area="nose" data-tool="contour"></canvas>
+        <canvas data-area="eye" data-tool="contour"></canvas>
+
+        <canvas data-area="cheek" data-tool="strobe"></canvas>
+        <canvas data-area="bow" data-tool="strobe"></canvas>
+        <canvas data-area="nose" data-tool="strobe"></canvas>
+        <canvas data-area="eye" data-tool="strobe"></canvas>
+
+        <div class="guides">
+            <div id="guide"></div>
+        </div>
+        <span class="loading"> ... </span>
+
+        <div class="prompt"><div></div></div>
+        <a href="#" class="btn blend" style="display: none;">Blend</a>
+        <a href="#" class="reset" style="display:  none;"></a>
+    </div>
+    <div class="toolbar bottom">
+        <a href="#" id="contour" class="col-xs-6 tool contour">
+            {% trans %}practice.tool.contour{% endtrans %}
+            <img src="{{ asset("bundles/app/images/ellipse-contour.png") }}">
+        </a>
+        <a href="#" id="strobe" class="col-xs-6 tool highlight">
+            {% trans %}practice.tool.highlight{% endtrans %}
+            <img src="{{ asset("bundles/app/images/ellipse-highlight.png") }}">
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script>
+    //disable rubber banding
+    document.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, false);
+
+    $(function(){
+        var i18n = {
+            'intro' : "{% trans %}practice.instruction.p0{% endtrans %}",
+            'contour' : "{% trans %}practice.instruction.p1{% endtrans %}",
+            'blend' : "{% trans %}practice.instruction.p2{% endtrans %}",
+            'strobe' : "{% trans %}practice.instruction.p3{% endtrans %}"
+        };
+
+        //this is used on mobiles only
+        var focus = {
+            'cheek' : [563,406],
+            'eye' : [468,368],
+            'nose' : [385,326],
+            'jawline' : [628,509],
+            'bow' : [380,438]
+        };
+
+        var tools = {
+            draw : 10,
+            blend : 30
+        };
+
+        var tool, area,
+            init = true,
+            mobile = false,
+            w = 1290, h = 860,
+            limit = {x: 1024, y: 768},
+            guideOffset = {x: 0, y: 0};
+
+        var $guide = $('#guide');
+        var $wrapper = $('#wrapper');
+        var $canvas = $wrapper.find('canvas, .guides');
+        var r = tools.draw;
+
+        if ($wrapper.height() < limit.y && $wrapper.width() < limit.x){
+            //console.log('mobile size viewport');
+            mobile = true;
+            w = 1024;
+            h = 683;
+            guideOffset.x = 180;
+            guideOffset.y = 170;
+        }
+
+        /**
+         * Layer positions
+         */
+        $(window).on('resize', function (){
+            $wrapper.css('top', $('.navbar').height() + 57);
+            //resize drawing layers
+            $canvas.not('.guides').attr('width', w).attr('height', h).css({
+                width: w + 'px'
+            });
+            //resize the guides layer
+            $canvas.not('canvas').css({
+                height: h + 'px',
+                width: w + 'px'
+            });
+
+            //pan the lot
+            $canvas.css({
+                left: $wrapper.width() / 2 - w / 2 - 50,
+                top: "-40px"
+            });
+
+            //Mobile need viewport shifted to cheek
+            if (mobile && init){
+                //console.log('initial panning');
+                $canvas.css({
+                    top:  $wrapper.height() / 2 - focus.cheek[1],
+                    left: $wrapper.width() / 2 - focus.cheek[0]
+                });
+            }
+
+            //redraw the lot.
+            $canvas.each(function(){
+                if (this.reset){
+                    this.reset();
+                }
+            });
+
+            //init is done
+            init = false;
+        }).resize();
+
+        /**
+         * Layer loaders
+         */
+        $canvas.each(function(){
+            if(this.nodeName == 'DIV'){
+                return;
+            }
+
+            var canvas = this;
+            var $this = $(this);
+            var img = new Image();
+            var tool = $this.data('tool'), area = $this.data('area');
+
+            img.src = '/bundles/app/images/canvas/' + (tool ?  (tool +  '/') : '') + area + '.png';
+
+            $this.addClass(tool).addClass(area);
+
+            img.addEventListener('load', function(){
+                //console.log('setup: ' + tool + ':' + area );
+
+                var ctx = canvas.getContext('2d');
+                var ratio = Math.min (
+                    canvas.width / img.width,
+                    canvas.height / img.height
+                );
+
+                ctx.globalCompositeOperation = 'source-over';
+
+                ctx.clearRect(0,0, canvas.width, canvas.height);
+
+                ctx.drawImage(
+                    img, 0,  0,  img.width,         img.height,
+                         0,  0,  img.width * ratio, img.height * ratio
+                );
+                canvas.reset = arguments.callee;
+
+                if (!tool){
+                    $canvas.css('opacity', 1);
+                    $wrapper.find('.prompt > div').text(i18n['intro']).show();
+                }
+            }, false);
+        });
+
+        /**
+         * Drawing handlers
+         */
+
+        $wrapper.on('mousemove touchmove', function (e) {
+            var $selected = $canvas.siblings('canvas.' + tool + '.' + area);
+
+            if (!$selected.data('drawing') || !tool || !area) {
+                return;
+            }
+
+            if (e.originalEvent){
+                e = e.originalEvent;
+            }
+
+            //console.log('draw: ' + tool + ':' + area);
+
+            var x, y, ctx, gradient;
+
+            if (e.pageX || e.pageY) {
+                x = e.pageX;
+                y = e.pageY;
+            } else {
+                x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+                y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+            }
+
+            if (e.type == 'touchmove'){
+                x = e.changedTouches[0].pageX;
+                y = e.changedTouches[0].pageY;
+            }
+
+            x -= $selected.offset()['left'];
+            y -= $selected.offset()['top'];
+
+            ctx = $selected[0].getContext('2d');
+
+            ctx.globalCompositeOperation = 'destination-out';
+
+            gradient = ctx.createRadialGradient(
+                x, y, r,
+                x, y, 0
+            );
+            gradient.addColorStop(0, 'rgba(255,255,255,0)');
+            if (r < tools.blend) {
+                gradient.addColorStop(0.5, 'white');
+            }
+            gradient.addColorStop(1, 'white');
+
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.arc(x, y, r, 0, Math.PI * 2, false);
+            ctx.fill();
+        });
+
+        var skipHidePrompt = false;
+        $wrapper.on('mousedown touchstart', function() {
+            if (!tool || !area) {  return;  }
+
+            //console.log('start: ' + area);
+            $canvas
+                .data('drawing', false)
+                .siblings('.' + tool + '.' + area)
+                    .data('drawing', true);
+
+            $guide.hide();
+            if (!skipHidePrompt){
+                $wrapper.find('.prompt > div').hide();
+            } else {
+                skipHidePrompt = false;
+            }
+        });
+
+        $wrapper.on('mouseup touchend',  function () {
+            if (!tool || !area) {  return;  }
+
+            // show button if not already used.
+            if (r < tools.blend) {
+                $wrapper.find('.blend, .reset').show();
+            }
+
+            //stop drawing on all, in case mouse out.
+            $canvas.data('drawing', false);
+        });
+
+        /**
+         * Drawing controls
+         */
+        $wrapper.find('.blend').on('click touchstart', function(e){
+            r = tools.blend;
+            $(this).hide();
+            e.preventDefault();
+            skipHidePrompt = true;
+            $wrapper.find('.prompt > div').text(i18n['blend']).show();
+        });
+
+        $wrapper.find('.reset').on('click touchstart', function(e){
+            //reset all layers canvas
+            $canvas.data('drawing', false).siblings('canvas').each(function() {
+                this.reset()
+            });
+            r = tools.draw;
+            area = tool = false;
+
+            $wrapper.find('.blend, .reset, .toolbar.top').hide();
+            $wrapper.find('.toolbar.bottom').addClass('open');
+            $wrapper.find('.toolbar.bottom a, .toolbar.top a').removeClass('active');
+            e.preventDefault();
+        });
+
+        /**
+         * Toolbars
+         */
+        var $toolbar = $('.toolbar.top');
+        var toolbarTimer = null;
+
+        function toogleToolbar(){
+            setTimeout(function(){
+                if (!toolbarTimer){
+                    toolbarTimer = true;
+                    return;
+                }
+                $toolbar.toggleClass('open');
+            }, 100);
+        }
+
+        var lastGuideArea = -1;
+        var lastTool = -1;
+        function showGuide(){
+            if (lastGuideArea !== area || lastTool !== tool){
+                //Pan only on limited viewports
+                if (mobile) {
+                    $canvas.css({
+                        top:  $wrapper.height() / 2 - focus[area][1],
+                        left: $wrapper.width() / 2 - focus[area][0]
+                    });
+                }
+
+                $guide.attr('class', tool + ' ' + area).show();
+            }
+            lastGuideArea = area;
+            lastTool = tool;
+        }
+
+        function selectMenuItem($item, skipToolbar){
+            $wrapper.find('.blend, .reset').hide();
+
+            area = $item.data('key');
+            r = tools.draw;
+
+            //console.log('area: '+ area);
+
+            var group = $item.attr('data-group');
+            $item.siblings('.active').removeClass('active');
+            $item.addClass('active').siblings('[data-group="'+group+'"]').addClass('active');
+
+            $('.prompt > div').html(i18n[tool]).show();
+
+            var key = $item.attr('data-group') || $item.attr('data-key');
+            $toolbar.attr('data-pos', key);
+
+            setTimeout(showGuide, 1000);
+        }
+
+        $('.toolbar.top a').on('click touchstart', function(e){
+            if ($toolbar.is('.open') || !toolbarTimer || $('.arrow').height() > 0){
+                selectMenuItem($(this));
+            }
+            toogleToolbar();
+            e.preventDefault();
+        });
+
+        var notInited
+        $('.toolbar.bottom a').on('click touchstart', function(e){
+            $wrapper.find('.blend, .reset').hide();
+
+            tool = this.id;
+            r = tools.draw;
+
+            var $this = $(this);
+            $this.addClass('active').siblings('.active').removeClass('active');
+
+            notInited = $('.toolbar.top').css('visibility') === 'hidden';
+
+            $('.toolbar.top')
+                .css('visibility', 'visible')
+                .find('a')
+                    .hide()
+                    .siblings('.' + tool)
+                        .show();
+
+
+            if(!notInited){
+                $('.slider .arrow').show();
+            }
+            e.preventDefault();
+
+            initToolbar();
+            selectMenuItem($('.toolbar.top a.active:visible:first'));
+        });
+
+        /**
+         * Start by showing the bottom one...
+         */
+        $('.toolbar.bottom').addClass('open');
+    });
+</script>
+{% endblock %}

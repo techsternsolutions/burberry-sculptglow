@@ -1,0 +1,287 @@
+@import (reference) "utility";
+@import "functions.less";
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    //
+    //  Tablet only styles overrides, they are loaded on top of tablet and before desktop.
+    //
+
+    body.login form .btn {
+        font-size: 18px;
+    }
+
+    body.share{
+        .instructions{
+            .flex-center;
+
+            img{
+                margin-bottom: 55px;
+            }
+        }
+
+        .selfie{
+            .crop-area {
+                margin: 0 auto 65px;
+                width: 80%;
+            }
+
+            .form-group {
+                width: 350px;
+                margin-bottom: 40px;
+            }
+
+            .close-modal {
+                height: 50px;
+                width: 50px;
+                .icon-bar {
+                    width: 50px;
+                }
+            }
+        }
+
+        .item{
+            .flex-center;
+
+            &.odd{
+                .image {
+                    .transform(translateX(100%));
+                }
+                .details {
+                    .transform(translateX(-100%));
+                }
+            }
+
+            .image {
+                margin-bottom: 0;
+            }
+        }
+
+        #selfie-modal{
+            bottom: 0;
+        }
+    }
+    .navbar-collapse  .large-nav {
+        margin-bottom: 20px;
+        a {
+            padding-top: 8vh;
+            padding-bottom: 8vh;
+            font-size: 25px;
+            img {
+                max-width: 80px;
+                max-height: 60px;
+            }
+        }
+    }
+    body.practice {
+        .toolbar.bottom {
+            a {
+                padding-bottom: 80px;
+            }
+            img {
+                opacity: 1;
+            }
+        }
+        #wrapper .prompt{
+            bottom: 21%;
+            top: auto;
+            font-size: 23px;
+        }
+
+
+        #wrapper #guide{
+            &.contour{
+                &.cheek{
+                    top: 390px;
+                    left: 656px;
+                    height: 12352px/64;
+                    width: 352px/2;
+                    background-image: url(../images/canvas/contour/animation-cheek.png);
+                    .animation(cheek, -24704px, 64);
+                }
+                &.eye{
+                    top: 290px;
+                    left: 489px;
+                    height: 11495px/55/2;
+                    width: 426px/2;
+                    background-image: url(../images/canvas/contour/animation-eye.png);
+                    background-size: 426px/2 11495px/2;
+                    .animation(eye, -11495px, 55);
+                }
+                &.jawline{
+                    top: 567px;
+                    left: 806px;
+                    height: 182.5px;
+                    width: 114px;
+                    background-image: url(../images/canvas/contour/animation-jawline.png);
+                    background-size: 251px/2 22631px/2;
+                    .animation(jawline, -22631px, 61);
+                }
+                &.nose{
+                    top: 327px;
+                    left: 443px;
+                    height: 17885px/49/2;
+                    width: 228px/2;
+                    background-image: url(../images/canvas/contour/animation-nose.png);
+                    background-size: 228px/2 17885px/2;
+                    .animation(nose, -17885px, 49);
+                }
+            }
+            &.strobe{
+                &.bow{
+                    top: 542px;
+                    left: 455px;
+                    height: 3330px/30/2;
+                    width: 199px/2;
+                    background-image: url(../images/canvas/strobe/animation-bow.png);
+                    background-size: 199px/2 3330px/2;
+                    .animation(scheek, -3330px, 30);
+                }
+                &.eye{
+                    top: 317px;
+                    left: 456px;
+                    height: 8151px/39/2;
+                    width: 426px/2;
+                    background-image: url(../images/canvas/strobe/animation-eye.png);
+                    background-size: 426px/2 8151px/2;
+                    .animation(seye, -8151px, 39);
+                }
+                &.cheek{
+                    top: 337px;
+                    left: 596px;
+                    height: 11169px/51/2;
+                    width: 402px/2;
+                    background-image: url(../images/canvas/strobe/animation-cheek.png);
+                    background-size: 402px/2 11169px/2;
+                    .animation(sjawline, -11169px, 51);
+                }
+                &.nose{
+                    top: 327px;
+                    left: 423px;
+                    height: 22630px/62/2;
+                    width: 228px/2;
+                    background-image: url(../images/canvas/strobe/animation-nose.png);
+                    background-size: 228px/2 22630px/2;
+                    .animation(snose, -22630px, 62);
+                }
+            }
+        }
+    }
+    body.product {
+        .row.half{
+            &> *{
+                height: 50vw;
+                vertical-align: middle;
+                padding: 0;
+                overflow: hidden;
+            }
+            .image .wrapper {
+                height: 100%;
+                & > img {
+                    height: 30vw;
+                    margin-top: 2vw;
+                }
+                .popup img{
+                    margin-top: 15vw;
+                }
+                .link, .popup .close {
+                    bottom: 5vw;
+                }
+            }
+            .text .wrapper {
+                position: absolute;
+                width: 100%;
+                margin-top: 50%;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+            }
+            .text {
+                h2{
+                    margin-top: 18px;
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 18px;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        .video .adjust-text {
+            opacity: .4;
+            font-size: 24px;
+            width: 90%;
+            @media (min-width: @screen-tablet-max) and (max-width: @screen-desktop-max) {
+                font-size: 20px;
+                width: 100%;
+            }
+            &.active {
+                opacity: 1;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 0;
+                    height: 0;
+                    border-left: 20px solid transparent;
+                    border-right: 20px solid transparent;
+                    border-top: 20px solid #787878;
+                }
+            }
+        }
+    }
+    @height:40px;
+    .setNavbarHeight(@height);
+}
+
+@media (max-width: @screen-tablet-max){
+    body.share{
+        .item{
+            .image {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    body.product {
+        .row.half{
+            .image{
+                height: 100vw;
+                vertical-align: middle;
+                padding: 0;
+                overflow: hidden;
+
+                .wrapper {
+                    height: 100%;
+                    & > img {
+                        height: 50vw;
+                        margin-top: 5vw;
+                    }
+                    .popup img{
+                        margin-top: 15vw;
+                    }
+                    .link, .popup .close {
+                        bottom: 15vw;
+                    }
+                }
+            }
+            .text {
+                h2, p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-desktop-max){
+    body.product{
+        .video{
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+}

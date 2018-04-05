@@ -1,0 +1,10 @@
+---
+- name: Ensure mailcatcher started
+  supervisorctl: name=mailcatcher state=started
+
+- name: symlink appdir
+  file: src={{ item.path }} dest=/home/vagrant/{{ item.domain }} state=link
+  with_items: hosts
+
+- name: Final Apache Restart
+  service: name=apache2 state=restarted

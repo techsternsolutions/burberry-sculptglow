@@ -1,0 +1,27 @@
+---
+- name: Add node ppa
+  apt_repository: repo='ppa:chris-lea/node.js'
+
+- name: install node
+  apt: name={{item}} state=installed update_cache=yes
+  with_items:
+      - nodejs
+
+- name: Install grunt
+  npm: name={{ item }} global=yes
+  with_items:
+    - grunt
+    - grunt-cli
+    - jake
+
+- name: Install gulp
+  npm: name={{ item }} global=yes
+  with_items:
+      - gulp
+
+- name: Install Bower
+  npm: name={{ item }} global=yes
+  with_items:
+      - bower
+#- name: Install node
+#  script: ../install-node.sh 

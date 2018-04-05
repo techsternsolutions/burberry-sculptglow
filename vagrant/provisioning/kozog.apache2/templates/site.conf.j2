@@ -1,0 +1,16 @@
+NameVirtualHost *:80
+
+<VirtualHost *:80>
+	ServerAdmin admin@fourthmedia.co.nz
+	ServerName {{ item.domain }}
+	ServerAlias www.{{ item.domain }}
+
+	DocumentRoot {{ item.path }}/web
+	<Directory "{{ item.path }}/web">
+		AllowOverride All
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/{{ item.domain }}-error.log
+	CustomLog ${APACHE_LOG_DIR}/{{ item.domain }}.log combined
+</VirtualHost>
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet

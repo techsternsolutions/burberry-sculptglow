@@ -1,0 +1,31 @@
+---
+- hosts: all
+  remote_user: vagrant
+  sudo: yes
+  vars:
+    app_name: burberry
+    app_dir: "/var/www/burberry"
+    app_domain: "burberry.devlocal"
+    hosts:
+        - {domain: "{{app_domain}}", path: "{{ app_dir }}" }
+    php_ini:
+        timezone: "Europe/Warsaw"
+        upload_size: 500M
+        memory: 1512M
+
+    mysql:
+        - { user: burberry, password: burberry, database: burberry_dev } 
+        - { user: burberry, password: burberry, database: burberry } 
+        - { user: burberry, password: burberry, database: burberry_test } 
+
+    url_apt_key: "http://keyserver.ubuntu.com/pks/lookup?op=get&search="
+
+  roles:
+    - kozog.common 
+    - kozog.php
+    - kozog.apache2
+    - kozog.mysql
+    - kozog.mailcatcher
+    - kozog.node
+    - kozog.less
+    - postinstall

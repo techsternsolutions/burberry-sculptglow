@@ -1,0 +1,135 @@
+login.form.username: Nome utente
+login.form.password: Password
+login.form.login: Accedi
+
+
+nav.product: Il<br/> prodotto
+nav.practice: Fai pratica con <br/> contouring e strobing <br/> semplice e veloce
+nav.share: Condividi <br/> il tuo look
+
+home.intro: Burberry presenta
+home.brand: Scolpire e illuminare
+home.byline: Scopri il contouring semplice e veloce <br/> ispirato alla sfilata Burberry.
+
+product.intro.p1: |
+    "Face Contour e Fresh Glow <br/>
+    sono i prodotti perfetti per il contouring,<br/>
+    concepiti in modo che tutti possano ottenere facilmente risultati da sfilata."
+product.intro.p2: |
+    "Scopri le tecniche ispirate alle sfilate <br/>
+    per scolpire e illuminare <br/>
+    con la nuova collezione."<br/>
+    <br/>
+product.sculpt.p1: |
+    "Ispirata alle sfilate,<br/>
+    Face Contour, sapientemente sviluppata  <br/>
+    dalla make-up artist Wendy Rowe,  <br/>
+    dona al viso una definizione<br/>
+    e un gioco di luci e ombre naturali. <br/>
+    <br/>
+    Mi piacerebbe mostrare come applicare il prodotto.<br/> È semplicissimo."
+
+product.keywords: PAROLE CHIAVE
+
+product.sculpt.intro.h2: Scolpire
+product.sculpt.intro.h3: CONTOURING SEMPLICE E VELOCE
+product.sculpt.keywords: Semplice - Facile da sfumare - Lunga tenuta
+
+product.glow.intro.h2: Illuminare
+product.glow.intro.h3: STROBING SEMPLICE E VELOCE
+product.glow.p1: |
+    "Penna per strobing a effetto illuminante immediato  <br/>
+    che intensifica la luminosità dell'incarnato <br/>
+    con una tecnica precisa,  <br/>
+    in ogni momento e luogo. Un'icona delle<br/>
+    sfilate usata nel backstage <br/>
+    da Wendy Rowe, consulente artistico per<br/>
+    il make-up di Burberry."
+
+
+product.glow.keywords: Illuminare - Strobing semplice e veloce
+
+product.tutorial.watch: Guarda il tutorial
+product.tutorial.a: Con Charlotte
+product.tutorial.b: Con Liu Ping
+product.shades.available: Tonalità disponibili
+
+product.tutorial.a.step1: |
+    Tracciare una forma<br/>
+    triangolare che segue<br/>
+    i contorni naturali del viso, poi sfumare utilizzando un pennello o le dita.<br/>
+
+
+product.tutorial.a.step2: |
+    Applicare sull'angolo interno degli occhi per ingrandire e illuminare lo sguardo. Questo passaggio aiuterà ad amplificarlo.
+
+product.tutorial.a.step3: |
+    Applicare
+    sull'arco di Cupido
+    per dare volume alle labbra.
+
+product.tutorial.b.step1: |
+    Creare l'illusione <br/>
+    di profondità sulla piega dell'occhio applicandovi Face Contour per <br/>
+    conferire definizione <br/>
+    e tridimensionalità.
+
+product.tutorial.b.step2: |
+    Creare una forma <br/>
+    a V applicando Face <br/>
+    Contour partendo dai lati degli zigomi e scendendo verso la mascella.
+
+product.tutorial.b.step3: |
+    Applicare il prodotto
+    da dove cominciano <br/>
+    le sopracciglia per creare una forma a V sul dorso del naso.
+
+share.intro: CONDIVIDI IL TUO LOOK
+share.byline: Galleria selfie
+share.instruction.p0: Ora che hai imparato le tecniche per un contouring e strobing semplice e veloce, esercitati e condividi il tuo look nella galleria selfie qui sotto:
+share.instruction: I consigli di Wendy per selfie perfetti:
+share.instruction.p1: |
+    1. Assicurarsi che ci sia una buona illuminazione  
+share.instruction.p2: |
+    2.  Tenere il telefono in alto<br/>
+    con un'angolazione di 45°
+share.instruction.p3: |
+    3.  Assicurarsi che il make-up
+
+share.form.title: Condividi il tuo look qui
+share.form.name: Nome completo
+share.form.location: Città
+share.form.submit: Carica
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Zigomo
+practice.area.eye: Occhio
+practice.area.bow: Arco di Cupido
+practice.area.nose: Naso
+practice.area.jawline: Profilo della mascella
+
+practice.tool.contour: Contouring
+practice.tool.highlight: Highlighting
+
+practice.tool.blend: SFUMA
+
+practice.instruction.p1: 1. Disegna le linee di contouring
+practice.instruction.p2: 2. Sfuma le linee di contouring
+practice.instruction.p3: Applica la penna Fresh Glow
+
+share.crop.heading: Ritaglia la tua immagine...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

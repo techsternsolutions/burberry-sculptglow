@@ -1,0 +1,29 @@
+---
+- name: Install PHP
+  apt: pkg={{ item }} state=latest update_cache=yes
+  with_items:
+    - php5-cgi
+    - php5-cli
+    - php5-intl
+    - php5-gd
+    - php5-pgsql
+    - php5-xsl 
+    - php5-curl
+    - php5-imagick
+    - libapache2-mod-php5
+    - php-apc
+  notify:
+    - Restart Apache
+
+- name: Install composer
+  shell: curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer creates=/usr/local/bin/composer
+
+- name: Adjust php_ini
+  template:
+    src: php.ini.j2
+    dest: "{{ item }}"
+  with_items:
+        - /etc/php5/cli/php.ini
+        - /etc/php5/cgi/php.ini
+  notify:
+    - Restart Apache

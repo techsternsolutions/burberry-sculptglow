@@ -1,0 +1,133 @@
+login.form.username: nazwa użytkownika
+login.form.password: hasło
+login.form.login: Zaloguj się
+
+
+nav.product: Produkt
+nav.practice: Wykonaj łatwe <br/> konturowanie <br/> i strobing
+nav.share: Podziel<br/> się efektami
+
+home.intro: Przedstawiamy
+home.brand: Modelowanie i blask
+home.byline: Odkryj konturowanie według Burberry<br/> zainspirowane pokazami mody.
+
+product.intro.p1: |
+    „Opracowaliśmy sztyft do konturowania <br/>
+    i bazę Fresh Glow, aby każdy mógł odtworzyć<br/>
+    makijaż widziany na wybiegach.”
+product.intro.p2: |
+    „Poznaj techniki modelowania <br/>
+    i strobingu stosowane za kulisami <br/>
+    pokazów mody.”<br/>
+    <br/>
+product.sculpt.p1: |
+    „Zainspirowany wybiegami sztyft<br/>
+    do konturowania został opracowany<br/>
+    przez wizażystkę Wendy Rowe.<br/>
+    Daje efekt naturalnego podkreślenia<br/>
+    i wymodelowania twarzy. <br/>
+    <br/>
+    Z przyjemnością zaprezentuję, jak działa. <br/> To bardzo proste.””
+
+product.keywords: SŁOWA KLUCZOWE
+
+product.sculpt.intro.h2: MODELOWANIE
+product.sculpt.intro.h3: ŁATWY STROBING
+product.sculpt.keywords: Łatwa aplikacja — Latwo się rozciera — Trwały
+
+product.glow.intro.h2: BLASK
+product.glow.intro.h3: EFFORTLESS STORBING MADE EASY
+product.glow.p1: |
+    „Łatwy w użyciu sztyft nadający skórze <br/>
+    blasku dzięki precyzyjnemu strobingowi <br/>
+    i rozświetleniu cery. W dowolnym miejscu, <br/>
+    w każdym czasie. Kultowy kosmetyk stosowany<br/>
+    za kulisami pokazów mody przez wizażystkę<br/>
+    marki Burberry, Wendy Rowe””
+
+product.glow.keywords: Blask — Łatwy strobing
+
+product.tutorial.watch: Obejrzyj samouczek
+product.tutorial.a: Charlotte
+product.tutorial.b: Liu Ping
+product.shades.available: Dostępne odcienie
+
+product.tutorial.a.step1: |
+    Narysuj trójkątny kształt <br/>
+    zgodnie z naturalnymi<br/>
+    konturami twarzy, a następnie rozetrzyj produkt pędzelkiem lub opuszkami palców.
+
+product.tutorial.a.step2: |
+    Nałóż produkt w wewnętrznym kąciku oka, aby rozświetlić spojrzenie.
+    W ten sposób uzyskasz efekt otwarcia oka.
+
+product.tutorial.a.step3: |
+    Nałóż produkt
+    na łuk Kupidyna,
+    aby optycznie powiększyć usta.
+
+product.tutorial.b.step1: |
+    Aby podkreślić <br/>
+    i wymodelować <br/>
+    spojrzenie, nałóż sztyft do konturowania pod łukiem brwiowym.
+
+product.tutorial.b.step2: |
+    Nadaj twarzy <br/>
+    kształtu litery V — nałóż sztyft do konturowania <br/>
+    od krawędzi kości policzkowych, kierując <br/>
+    się w stronę linii żuchwy.
+
+product.tutorial.b.step3: |
+    Rozpocznij nakładanie sztyftu od początku linii brwi, aby stworzyć kształt litery V <br/>
+    u góry nosa.
+
+share.intro: Podziel się efektami
+share.byline: Galeria selfie
+share.instruction.p0: Skoro już zapoznaliście się z tematem konturowania i strobingu, przećwiczcie wykonywanie makijażu i podzielcie się efektami w poniższej galerii selfie:
+share.instruction: Wskazówki Wendy dotyczące robienia selfie:
+share.instruction.p1: |
+    1. Upewnij się, że masz dobre światło. 
+share.instruction.p2: |
+    2. Trzymaj telefon powyżej<br/>
+    twarzy pod kątem 45 stopni.
+share.instruction.p3: |
+   3. Upewnij się, że makijaż wygląda <br/>
+    naturalnie i nie jest zbyt ciężki.
+
+share.form.title: Podziel się efektami poniżej
+share.form.name: Imię i nazwisko
+share.form.location: Miejscowość
+share.form.submit: Załaduj
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Kości policzkowe
+practice.area.eye: Oczy
+practice.area.bow: Łuk Kupidyna
+practice.area.nose: Nos
+practice.area.jawline: Linia żuchwy
+
+practice.tool.contour: Konturowanie
+practice.tool.highlight: Rozświetlanie
+
+practice.tool.blend: Rozetrzyj
+
+practice.instruction.p1: Wymodeluj twarz
+practice.instruction.p2: Rozetrzyj narysowane linie
+practice.instruction.p3: Nałóż sztyft Fresh Glow
+
+share.crop.heading: Przytnij zdjęcie…
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

@@ -1,0 +1,54 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+require "yaml"
+
+_config = YAML.load(File.open(File.join(File.dirname(__FILE__), "provisioning/playbook.yml"), File::RDONLY).read)
+
+host = RbConfig::CONFIG['host_os']
+# Give VM 1/4 system memory & access to all cpu cores on the host
+if host =~ /darwin/
+  cpus = `sysctl -n hw.ncpu`.to_i
+  # sysctl returns Bytes and we need to convert to MB
+  mem = `sysctl -n hw.memsize`.to_i / 1024 / 1024 / 4
+elsif host =~ /linux/
+  cpus = `nproc`.to_i
+  # meminfo shows KB and we need to convert to MB
+  mem = `grep 'MemTotal' /proc/meminfo | sed -e 's/MemTotal://' -e 's/ kB//'`.to_i / 1024 / 4
+else # sorry Windows folks, I can't help you
+  cpus = 2
+  mem = 1024
+end
+
+_config = _config[0]
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.ssh.forward_agent = true
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_host = true
+  config.hostmanager.ignore_private_ip = false
+  config.hostmanager.include_offline = true
+  config.vm.define _config['vars']['app_name'] + '-box' do |node|
+    node.vm.hostname = _config['vars']['app_domain']
+    node.vm.network :private_network, ip: '192.168.19.31'
+  end
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    vb.customize ["modifyvm", :id, "--memory", mem]
+    vb.customize ["modifyvm", :id, "--cpus", cpus]
+    vb.customize ["modifyvm", :id, "--cpuexecutioncap", 99]
+  end
+
+  config.vm.synced_folder "./../", _config['vars']['app_dir'], type: 'nfs'
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.verbose = "v"
+    ansible.playbook = "provisioning/playbook.yml"
+    ansible.host_key_checking = false
+  end
+
+end

@@ -1,0 +1,15 @@
+{% if file %}
+    <h2>{% trans %}share.crop.heading{% endtrans %}</h2>
+
+    <div class="crop-area">
+        <img src="/media/{{ file.basename }}" id="crop-target"/>
+    </div>
+
+    <div class="tap-to-continue hidden">
+
+    </div>
+{% else %}
+    {{ form_start(form, {'attr': {'class': 'form'} }) }}
+        {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endif %}

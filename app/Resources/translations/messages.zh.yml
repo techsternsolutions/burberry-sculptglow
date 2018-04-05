@@ -1,0 +1,133 @@
+login.form.username: 用户名
+login.form.password: 密码
+login.form.login: 登录
+
+
+nav.product: 臻品系列
+nav.practice: 轻松体验 <br/> 立体妆容技巧
+nav.share: 分享个人妆容
+
+home.intro: 倾心推介
+home.brand: Sculpt and Glow
+home.byline: 敬邀探索 Burberry 自然立体妆容， 灵感源自高级时装秀
+
+product.intro.p1: |
+    “我们悉心研发出「自然光影修颜笔」与「丝柔珠光亮彩笔」
+    两款修容彩妆产品，完美打造局部阴影及亮彩妆效。
+    两者配合使用即可轻松完成高级时装秀立体妆容”
+product.intro.p2: |
+    “敬邀探索来自博柏利高级时装秀<br/>
+    后台的立体感妆容秘诀技巧，<br/>
+    打造精致面部轮廓”<br/>
+    <br/>
+product.sculpt.p1: |
+    “「自然光影修颜笔」灵感源自<br/>
+    品牌高级时装秀，由彩妆艺术家<br/>
+    Wendy Rowe 悉心研发，能够<br/>
+    轻松打造自然阴影妆感。 <br/>
+    <br/>
+    <br/>
+    敬邀阁下体验轻松上妆技巧。”
+
+product.keywords: 关键词
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: 轻松缔造阴影妆感
+product.sculpt.keywords: 轻松易用 - 完美贴合 - 卓效持久
+
+product.glow.intro.h2: GLOW
+product.glow.intro.h3: 轻松打造亮彩妆效
+product.glow.p1: |
+    “细腻幼滑的「丝柔珠光亮彩笔」
+    能够精准提亮局部肤色，轻松奂就
+    莹泽明彩妆效。Burberry 彩妆艺术顾
+    Wendy Rowe 为高级时装秀后台
+    倾力打造的标志性美妆臻品”
+
+product.glow.keywords: 亮彩妆效 - 轻松奂现自然莹泽
+
+product.tutorial.watch: 观赏美妆教程视频
+product.tutorial.a: Charlotte 出镜演绎
+product.tutorial.b: Liu Ping 出镜演绎
+product.shades.available: 色调选择
+
+product.tutorial.a.step1: |
+    沿着面部自然轮廓
+    描画出三角区域，再用
+    化妆刷或指腹均匀推开
+
+
+product.tutorial.a.step2: |
+    涂抹于内眼角部位
+    轻松打造大眼明眸妆效
+
+product.tutorial.a.step3: |
+    涂抹于唇弓部位
+    完美缔造丰盈娇唇
+
+product.tutorial.b.step1: |
+    使用「自然光影修
+    颜笔」沿眼窝线涂抹
+    即可增加眼部立体感
+    营造深邃双眸
+
+product.tutorial.b.step2: |
+    塑造 V 型面庞 - 使用
+    「自然光影修颜笔」从
+    颧骨边缘向下涂抹
+    直至下颌部位。
+
+product.tutorial.b.step3: |
+    从眉头位置开始
+    沿鼻梁两侧向下涂抹
+    即可打造纤挺鼻型
+
+
+share.intro: 分享个人妆容
+share.byline: 自拍集锦
+share.instruction.p0: 敬邀倾心体验自然立体妆容技巧，并上传您的个人自拍照片，通过下方图片集锦分享完美立体妆容。
+share.instruction: Wendy 自拍秘诀：
+share.instruction.p1: |
+    1.确保光线良好 
+share.instruction.p2: |
+    2.将手机举于 45 度斜上角位置
+share.instruction.p3: |
+    3.确保妆容自然柔和
+
+share.form.title: 敬请于下方分享个人妆容
+share.form.name: 姓名
+share.form.location: 城市
+share.form.submit: 立即上传
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: 颧骨
+practice.area.eye: 眼部
+practice.area.bow: 唇弓
+practice.area.nose: 鼻梁
+practice.area.jawline: 下颌
+
+practice.tool.contour: 修颜
+practice.tool.highlight: 提亮
+
+practice.tool.blend: 混合
+
+practice.instruction.p1: 描画阴影线条
+practice.instruction.p2: 均匀揉合阴影线条
+practice.instruction.p3: 使用「丝柔珠光亮彩笔」
+
+share.crop.heading: 剪裁图片
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

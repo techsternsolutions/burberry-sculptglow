@@ -1,0 +1,132 @@
+login.form.username: 사용자 이름
+login.form.password: 비밀번호
+login.form.login: 로그인
+
+
+nav.product: 제품
+nav.practice: 자연스러운 컨투어링및 스트로빙 연습하기
+nav.share: 완성된룩 <br/> 공유하기
+
+home.intro: Introducing
+home.brand: Sculpt and Glow
+home.byline: 런웨이에서 영감을 받은 Burberry의 <br/>자연스러운 컨투어링을 만나보세요.
+
+product.intro.p1: |
+    “누구나 손쉽게 런웨이 스타일 메이크업을<br/>
+    완성할 수 있도록 개발된 페이스 컨투어와 프레시 <br/>
+    글로우로 완벽한 컨투어링을 연출하세요”
+product.intro.p2: |
+    “새로운 컬렉션을 사용한<br/>
+    런웨이 스타일의 컨투어링과<br/>
+    스트로빙 테크닉을 확인하세요”<br/>
+    <br/>
+product.sculpt.p1: |
+    “런웨이에서 영감을 받은<br/>
+    Face Contour Pen은 메이크업 아티스트<br/>
+    Wendy Rowe에 의해 개발된 제품으로,<br/>
+    얼굴에 자연스러운 윤곽과 음영을<br/>
+    연출합니다.<br/>
+    <br/>
+    얼마나 사용하기 편리한지를 <br/>직접 보여드리겠습니다.”
+
+product.keywords: 키워드
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: EFFORTLESS CONTOURING
+product.sculpt.keywords: 편리한 사용 - 발림성 - 지속력
+
+product.glow.intro.h2: GLOW
+product.glow.intro.h3: EFFORTLESS STORBING MADE EASY
+product.glow.p1: |
+    “정밀한 스트로빙과 하이라이트를 통해<br/>
+    언제 어디서나 여러분이 원하는<br/>
+    글로우를 편리하게 연출합니다. <br/>
+    버버리 메이크업 아티스틱 컨설턴트인<br/>
+    Wendy Rowe가 무대 뒤에서<br/>
+    애용하는 런웨이 아이콘입니다.”
+
+product.glow.keywords: 글로우 - 간편한 스트로빙
+
+product.tutorial.watch: 튜토리얼 보기
+product.tutorial.a: Charlotte
+product.tutorial.b: Liu Ping
+product.shades.available: 사용 가능한 쉐이드
+
+product.tutorial.a.step1: |
+    얼굴 본연의
+    윤곽을 따라 삼각형을 그린 <br/>
+    후 브러시 또는 손가락을 사용하여 문지릅니다.
+
+product.tutorial.a.step2: |
+    눈의 안쪽 코너에 그려 눈이 더욱 크고 밝게 보이도록 연출합니다. 눈이 더 크고 넓어 보이는 효과를 선사합니다.
+
+product.tutorial.a.step3: |
+    입술산 위에 그려
+    더욱 풍성한 입술을
+    완성합니다.
+
+product.tutorial.b.step1: |
+    Contour Pen으로
+    소켓 라인을 그려 눈매를 강조하고 입체적으로 표현합니다.
+
+
+product.tutorial.b.step2: |
+    브이라인 연출 - <br/>
+    Face Contour를 광대뼈 옆에서 시작해 턱선까지 바릅니다.
+
+product.tutorial.b.step3: |
+    Countour Pen을 사용해 <br/>
+    눈썹이 시작하는 부분에서 콧대까지 브이자로 그립니다.
+
+
+share.intro: 룩 공유하기
+share.byline: 셀카 갤러리
+share.instruction.p0: 이제 에포트리스 컨투어링과 스트로빙 메이크업을 배워봤으니, 직접 룩을 연출해 셀카 갤러리에서 공유해 보세요:
+share.instruction: 웬디의 셀카 팁:
+share.instruction.p1: |
+    1. 조명 상태를 확인합니다  
+share.instruction.p2: |
+    2.  스마트폰을 45도 정도 위로<br/>
+    위치시킵니다
+share.instruction.p3: |
+    3.  메이크업이 두껍지 않고<br/>
+    자연스러운지 확인합니다
+
+share.form.title: 아래에서 룩 공유하기
+share.form.name: 이름
+share.form.location: 도시
+share.form.submit: 업로드
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: 광대뼈
+practice.area.eye: 눈
+practice.area.nose: 코
+practice.area.jawline: 턱선
+practice.area.bow: 입술산
+
+
+practice.tool.contour: 컨투어링
+practice.tool.highlight: 하이라이트
+
+practice.tool.blend: 혼합하기
+
+practice.instruction.p1: 컨투어링 라인 그리기
+practice.instruction.p2: 컨투어링 라인 혼합하기
+practice.instruction.p3: Fresh Glow Pen으로 그리기
+
+share.crop.heading: 이미지 크기 조정
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

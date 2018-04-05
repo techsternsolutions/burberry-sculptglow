@@ -1,0 +1,62 @@
+/*
+    Created on : 28/08/2015, 1:04:33 PM
+    Author     : Petr Zalyautdinov <petr@webfit.co.nz>
+*/
+
+.setNavbarHeight(@navheight){
+    .navbar {
+        min-height: @navheight;
+    }
+    .container-fluid {
+        margin-top: @navheight;
+    }
+    .button-wrapper {
+        height: @navheight;
+        width: @navheight;
+        .navbar-toggle {
+            height: round(0.64*@navheight);
+            width: @navheight;
+            top: 0;
+            margin-top: round(0.18*@navheight);
+            @linegap: round(0.26*@navheight);
+
+            .icon-bar {
+                &:nth-child(2), &:nth-child(3) { top: 0px; }
+                &:nth-child(4), &:nth-child(5) { top: @linegap; }
+                &:nth-child(6), &:nth-child(7) { top: (2*@linegap); }
+            }
+            &.collapsed {
+                width: round(0.72*@navheight);
+            }
+
+            &:not(.collapsed) {
+                .icon-bar {
+                    &:nth-child(2) {
+                        left: round(0.12*@navheight);
+                        top: round(0.14*@navheight);
+                    }
+                    &:nth-child(3) {
+                        left: calc(~"50% - "round(0.10*@navheight));
+                        top: round(0.14*@navheight);
+                    }
+                    &:nth-child(6) {
+                        left: round(0.12*@navheight);
+                        top: round(0.4*@navheight);
+                    }
+                    &:nth-child(7) {
+                        left: calc(~"50% - "round(0.10*@navheight));
+                        top: round(0.4*@navheight);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.transform(@transformation){
+    -webkit-transform: @transformation;
+    -moz-transform: @transformation;
+    -ms-transform: @transformation;
+    -o-transform: @transformation;
+    transform: @transformation;
+}

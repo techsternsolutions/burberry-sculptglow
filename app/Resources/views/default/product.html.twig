@@ -1,0 +1,230 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <img src="{{ asset('bundles/app/images/bg-product-1.jpg') }}" class="img-responsive">
+    </div>
+
+    <div class="row text-block">
+        <p class="title">Sculpt and glow</p>
+        <p>{% trans %}product.intro.p1{% endtrans %}</p>
+        <p>{% trans %}product.intro.p2{% endtrans %}
+            <img class="intro-text-image" src="{{ asset('bundles/app/images/i-product.png') }}">
+        </p>
+    </div>
+
+    <div class="row sculpt-bg">
+        <h2 class="col-xs-12 text-center">{% trans %}product.sculpt.intro.h2{% endtrans %}</h2>
+        <h3 class="col-xs-12 text-center">{% trans %}product.sculpt.intro.h3{% endtrans %}</h3>
+    </div>
+
+    <div class="row half">
+        <div class="col-xs-12 col-sm-6 image">
+            <div class="wrapper">
+                <span class="title">face contour effortless<br/>contouring pen</span>
+                <img src="{{ asset('bundles/app/images/product-1.jpg') }}" class="img-responsive center-block">
+                <a href="#" class="link popup-trigger">{{ 'product.shades.available' | trans}}</a>
+                <div class="popup">
+                    <div class="col-xs-6 col-sm-6">
+                        <img src="{{ asset('bundles/app/images/contouring_pen_medium_no1.png') }}" class="img-responsive bb-pen-img center-block">
+                        <span class="bb-pen-title">Medium No.01</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                        <img src="{{ asset('bundles/app/images/contouring_pen_dark_no2.png') }}" class="img-responsive bb-pen-img center-block">
+                        <span class="bb-pen-title">Dark No.02</span>
+                    </div>
+                    <img class="close" src="{{ asset("bundles/app/images/i-close.png") }}">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 text">
+            <div class="wrapper">
+                <p>{% trans %}product.sculpt.p1{% endtrans %}</p>
+                <span class="spacer"></span>
+                <h2>{% trans %}product.keywords{% endtrans %}</h2>
+                <p>{% trans %}product.sculpt.keywords{% endtrans %}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <img src="{{ asset('bundles/app/images/bg-product-2.jpg') }}" class="img-responsive">
+    </div>
+    <div class="row glow-bg" style="background-image: url({{ asset('bundles/app/images/bg-product-5-new.png') }})">
+        <h2 class="col-xs-12 text-center">{% trans %}product.glow.intro.h2{% endtrans %}</h2>
+        <h3 class="col-xs-12 text-center">{% trans %}product.glow.intro.h3{% endtrans %}</h3>
+    </div>
+    <div class="row half">
+        <div class="col-xs-12 col-sm-6 text">
+            <div class="wrapper">
+                <p>{% trans %}product.glow.p1{% endtrans %}</p>
+                <span class="spacer"></span>
+                <h2>{% trans %}product.keywords{% endtrans %}</h2>
+                <p>{% trans %}product.glow.keywords{% endtrans %}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 image">
+            <div class="wrapper">
+                <span class="title">fresh glow <br/>highlighting luminous pen</span>
+                <img src="{{ asset('bundles/app/images/product-1.jpg') }}" class="img-responsive center-block">
+                <a href="#" class="link popup-trigger">{{ 'product.shades.available' | trans}}</a>
+                <div class="popup">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8">
+                        <img src="{{ asset('bundles/app/images/luminous_pen_nude_radiance_no1.png') }}" class="img-responsive bb-pen-img center-block">
+                        <span class="bb-pen-title">Nude Radiance No.01</span>
+                    </div>
+                    <img class="close" src="{{ asset("bundles/app/images/i-close.png") }}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <img src="{{ asset('bundles/app/images/bg-product-3.jpg') }}" class="img-responsive">
+    </div>
+    <div class="row video">
+        <h2 class="col-xs-12">{% trans %}product.tutorial.watch{% endtrans %}</h2>
+        <div class="col-xs-12 video-options">
+            <a href="#" class="col-xs-6 active" data-option="a">{% trans %}product.tutorial.a{% endtrans %}</a>
+            <a href="#" class="col-xs-6" data-option="b">{% trans %}product.tutorial.b{% endtrans %}</a>
+        </div>
+        <div class="option a" style="overflow: hidden; width: 100%; height: auto">
+            <div class="col-xs-12">
+                <div class="player-wrapper">
+                    <video id="player-a"
+                           data-account="719509184001"
+                           data-player="9830e80f-e4ae-4237-bc83-4b542a12eb0f"
+                           data-embed="default"
+                           class="player"
+                           data-video-id="4457310029001"
+                           z-index="-100"
+                           controls></video>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="adjust-text video-part" data-offset="85">
+                        {% trans %}product.tutorial.a.step1{% endtrans %}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="adjust-text video-part" data-offset="205">
+                        {% trans %}product.tutorial.a.step2{% endtrans %}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="adjust-text video-part" data-offset="215">
+                        {% trans %}product.tutorial.a.step3{% endtrans %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="option b" style="overflow: hidden; width: 100%; height: 0">
+            <div class="col-xs-12">
+                <div class="player-wrapper">
+                    <video id="player-b"
+                           data-account="719509184001"
+                           data-player="9830e80f-e4ae-4237-bc83-4b542a12eb0f"
+                           data-embed="default"
+                           class="player"
+                           data-video-id="4457638173001"
+                           z-index="-100"
+                           controls></video>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="adjust-text video-part" data-offset="61">
+                        {% trans %}product.tutorial.b.step1{% endtrans %}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="adjust-text video-part" data-offset="138">
+                        {% trans %}product.tutorial.b.step2{% endtrans %}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="adjust-text video-part" data-offset="153">
+                        {% trans %}product.tutorial.b.step3{% endtrans %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="next">
+        <img src="{{ asset('bundles/app/images/i-practice-2.png') }}">
+        <a href="{{ path('practice') }}">{% trans %}nav.practice{% endtrans %}</a>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="//players.brightcove.net/719509184001/9830e80f-e4ae-4237-bc83-4b542a12eb0f_default/index.js"></script>
+    <script>
+        $(function(){
+            var option = 'a';
+
+            //Reverse the lists to make lookup logic simpler
+             var captions = {
+                'a' : $($(".option.a .adjust-text").get().reverse()),
+                'b' : $($(".option.b .adjust-text").get().reverse())
+            };
+
+            ['player-a', 'player-b'].forEach(function(i){
+                videojs(i).on('timeupdate', function(){
+                    var time = this.currentTime();
+                    captions[option].each(function() {
+                        var $this = $(this);
+                        if ($this.data('offset') < time) {
+                            captions[option].removeClass('active');
+                            $this.addClass('active');
+                            //Break equivalent
+                            return false;
+                        }
+                    });
+                });
+            });
+
+            $('.video-options a').on('click', function(e){
+                //clear old player
+                videojs.players['player-' + option].pause();
+                videojs.players['player-' + option].currentTime(0);
+                captions[option].removeClass('active');
+                $('.option.' + option).css('height', '0');
+
+                //show new player
+                option = $(this).data('option');
+                $('.option.' + option).css('height', 'auto');
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                e.preventDefault();
+            });
+
+            $('.adjust-text').on('click', function(e){
+                var $this = $(this);
+                videojs.players['player-' + option].currentTime($this.data('offset') + 1);
+                captions[option].removeClass('active')
+                $this.addClass('active');
+                e.preventDefault();
+            });
+
+
+            //Product popups
+            $('a.popup-trigger').on('click', function(e){
+                e.preventDefault();
+                $(this).next().css({
+                    'opacity': 1,
+                    'visibility': 'visible',
+                    'z-index': 10
+                });
+            });
+
+            $('.popup img.close').on('click', function(e){
+                $(this).parent('div.popup').css({
+                    'opacity': 0,
+                    'visibility': 'visible',
+                    'z-index': -1
+                });
+            })
+        });
+    </script>
+
+{% endblock %}

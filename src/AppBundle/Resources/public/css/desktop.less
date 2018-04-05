@@ -1,0 +1,52 @@
+@import (reference) "utility";
+@import "functions.less";
+
+@media (min-width: @screen-desktop) {
+
+    //
+    //  Desktop only styles overrides, they are loaded on top of tablet and phone css.
+    //
+    body.product {
+        .text-block p{
+            font-size: 30px;
+        }
+        .row.half{
+            .text {
+                h2{
+                    margin-top: 24px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 24px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        .video{
+            text-align: center;
+            h2{
+                margin-top: 50px;
+                margin-bottom: 70px;
+                color: #5f5f5f;
+            }
+            a{
+                color: #949494;
+                font-family: Perpetua-Italic, serif;
+                font-style: italic;
+                font-size: 27px;
+                &.active {
+                    color: #5f5f5f;
+                }
+            }
+            .player-wrapper {
+
+                .player {
+
+                }
+            }
+        }
+    }
+
+    @height:50px;
+    .setNavbarHeight(@height);
+}

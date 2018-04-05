@@ -1,0 +1,128 @@
+login.form.username: nome de usuário
+login.form.password: senha
+login.form.login: Logon
+
+nav.product: O<br/> Produto
+nav.practice: Pratique como fazer contorno e strobing <br/> facilmente
+nav.share: Compartilhe <br/> seu look
+
+home.intro: Apresentando a
+home.brand: Caneta para <br/>esculpir <br/>e dar brilho
+home.byline: Conheça a caneta da Burberry para fazer <br/>contorno facilmente, inspirada no desfile.
+
+product.intro.p1: |
+    Desenvolvemos as canetas Face Contour <br/>
+    e Fresh Glow como os produtos perfeitos para fazer contorno <br/>e para que qualquer pessoa possa obter os resultados do desfile.
+
+product.intro.p2: |
+    "Conheça as técnicas inspiradas no desfile <br/>para esculpir e fazer strobing<br/>
+    com a nova coleção"<br/>
+    <br/>
+product.sculpt.p1: |
+    "Caneta Face Countour <br/>
+    inspirada nos desfiles, desenvolvida
+    com expertise pela artista da maquiagem <br/>Wendy Rowe, que cria definição <br/>e sombra sutil no rosto.
+    <br/>
+    Eu adoraria fazer uma demonstração <br/>de como usá-la. É fácil."
+
+product.keywords: PALAVRAS-CHAVE
+
+product.sculpt.intro.h2: ESCULPIR
+product.sculpt.intro.h3: CANETA DE CONTORNO FÁCIL DE USAR
+product.sculpt.keywords: Fácil de usar - Fácil de espalhar - De longa duração
+
+product.glow.intro.h2: BRILHO
+product.glow.intro.h3: CANETA DE STROBING FÁCIL DE USAR
+product.glow.p1: |
+    Uma caneta iluminadora fácil de usar que
+    proporciona radiância, fazendo strobing com <br/>
+    mais precisão e iluminando o rosto quando e onde
+    precisar. Um ícone dos desfiles usado nos bastidores
+    por Wendy Rowe, consultora artística <br/>
+    de maquiagem da Burberry
+
+
+product.glow.keywords: Brilho - Fazer strobing facilmente
+
+product.tutorial.watch: Assista ao tutorial
+product.tutorial.a: Com Charlotte
+product.tutorial.b: Com Liu Ping
+product.shades.available: Tonalidades disponíveis
+
+product.tutorial.a.step1: |
+    Desenhe um triângulo<br/>
+    seguindo os contornos naturais do rosto e depois espalhe com as pontas <br/>
+    dos dedos ou um pincel <br/>
+
+product.tutorial.a.step2: |
+    Aplique o produto <br/>no canto interno dos olhos, para aumentá-los <br/>
+    e iluminá-los. Ajudará <br/>a obter o efeito de olhos mais grandes e realçados.
+
+product.tutorial.a.step3: |
+    Aplique no arco do lábio superior, para obter
+    um look de lábios <br/>mais cheios.
+
+product.tutorial.b.step1: |
+    Crie a aparência de linha côncava aplicando a caneta de
+    contorno na linha côncava para definir e dar dimensão.
+
+product.tutorial.b.step2: |
+    Crie uma definição <br/>
+    em V - Aplique a caneta Face Countour desde <br/>
+    o lado da maçã do rosto em direção à linha <br/>
+    do maxilar
+
+product.tutorial.b.step3: |
+    Comece aplicando <br/>
+    a caneta de contorno no início das sobrancelhas para criar uma definição em V na linha do nariz.
+
+share.intro: COMPARTILHE SEU LOOK
+share.byline: Galeria de selfies
+share.instruction.p0: Agora que você aprendeu a fazer contorno e strobing facilmente, pratique e compartilhe seu look na galeria de selfies abaixo:
+share.instruction: Dicas da Wendy para tirar selfies:
+share.instruction.p1: |
+    1. Certifique-se de que tem uma <br/>boa iluminação 
+share.instruction.p2: |
+    2.  Segure o celular no alto <br/>
+    em um ângulo de 45 graus
+share.instruction.p3: |
+    3.  Certifique-se de que sua maquiagem <br/>
+    é natural e não está carregada
+
+share.form.title: Compartilhe seu look abaixo
+share.form.name: Nome
+share.form.location: Cidade
+share.form.submit: Fazer upload
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Maçã do rosto
+practice.area.eye: Olho
+practice.area.bow: Arco do lábio superior
+practice.area.nose: Nariz
+practice.area.jawline: Linha do maxilar
+
+practice.tool.contour: Contornar
+practice.tool.highlight: Iluminar
+
+practice.tool.blend: ESPALHAR
+
+practice.instruction.p1: Desenhe linhas de contorno
+practice.instruction.p2: Espalhe as linhas de contorno
+practice.instruction.p3: Aplique a caneta Fresh Glow
+
+share.crop.heading: Recortar sua imagem...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

@@ -1,0 +1,9 @@
+{% extends 'TwigBundle:Exception:errorLayout.html.twig' %}
+
+{% block content %}
+    <div>
+        <h1>{% trans %} error.page.h1 {% endtrans %} {{ status_code }}</h1>
+        <p>{% trans %} error.page.p {% endtrans %}</p>
+        <a href="{{ path('home') }}">{% trans%} error.page.back {% endtrans %}</a>
+    </div>
+{% endblock %}

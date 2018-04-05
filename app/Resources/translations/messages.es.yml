@@ -1,0 +1,135 @@
+login.form.username: usuario
+login.form.password: contraseña
+login.form.login: Iniciar sesión
+
+
+nav.product: El<br/> producto
+nav.practice: |
+    Practique el contouring<br/>
+    y strobing más sencillos
+nav.share: |
+    Comparta<br/>
+    su look
+
+home.intro: Burberry presenta
+home.brand: Sculpt and Glow
+home.byline: |
+    Descubra el contouring sencillo de Burberry,<br/>
+    inspirado en la pasarela.
+
+product.intro.p1: |
+    “Hemos desarrollado Face Contour <br/>
+    y Fresh Glow para un contouring ideal y sencillo<br/>
+    a fin de obtener unos resultados dignos de pasarela”.
+product.intro.p2: |
+    “Descubra las técnicas de contouring<br/>
+    y strobing inspiradas en la pasarela<br/>
+    con la nueva colección”<br/>
+    <br/>
+product.sculpt.p1: |
+    “La artista maquilladora<br/>
+    Wendy Rowe ha desarrollado <br/>
+    el lápiz Face Contour, inspirado en la pasarela, <br/>
+    con las técnicas más expertas para conseguir un rostro <br/>
+    con una definición y un color naturales. <br/>
+    <br/>
+    Me encantaría mostrarle cómo. Es muy fácil de aplicar”.
+
+product.keywords: PALABRAS CLAVE
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: EL CONTOURING MÁS SENCILLO
+product.sculpt.keywords: Aplicación sencilla - Fácil de mezclar - Larga duración
+
+product.glow.intro.h2: GLOW
+product.glow.intro.h3: EL STROBING MÁS SENCILLO
+product.glow.p1: |
+    “Un lápiz fácil de usar sobre la marcha que <br/>
+    realza la luminosidad y permite un strobing preciso <br/>
+    donde quiera y como quiera. Es todo un icono <br/>
+    de la pasarela que usa Wendy Rowe, <br/>
+    by Wendy Rowe, Burberry Make-up's<br/>
+    artista maquilladora de Burberry”.
+
+product.glow.keywords: Glow - El strobing más sencillo
+
+product.tutorial.watch: Vea el tutorial
+product.tutorial.a: Con Charlotte
+product.tutorial.b: Con Liu Ping
+product.shades.available: Tonos disponibles
+
+product.tutorial.a.step1: |
+    Dibujamos una forma<br/>
+    triangular a lo largo de<br/>
+    los contornos naturales del rostro y, a continuación, mezclamos con una brocha o las yemas de los dedos.
+
+product.tutorial.a.step2: |
+    Aplicamos en el extremo interior de los ojos para <br/>realzar la mirada y su brillo. Así los ojos parecen <br/>más grandes.
+
+product.tutorial.a.step3: |
+    Aplicamos en el arco de Cupido para que los labios luzcan más plenos.
+
+product.tutorial.b.step1: |
+    Creamos un efecto de pliegue del ojo aplicando el lápiz Contour Pen <br/>
+    en dicho pliegue; así, aportamos definición <br/>
+    y dimensión.
+
+product.tutorial.b.step2: |
+    Creamos una forma <br/>
+    en uve, aplicando desde el lado del pómulo hacia abajo hasta la línea <br/>
+    de la mandíbula.
+
+product.tutorial.b.step3: |
+    Aplicamos el producto desde el nacimiento <br/>de las cejas, donde se crea la forma de uve en <br/>
+    el puente de la nariz.
+
+share.intro: COMPARTA SU LOOK
+share.byline: Galería de imágenes
+share.instruction.p0: Ahora que sabe cómo crear el contouring y strobing más sencillos, practique y comparta su nuevo look en la galería de imágenes a continuación:
+share.instruction: Los consejos de Wendy para hacerse una foto:
+share.instruction.p1: |
+    1. Asegúrese de tener buena luz 
+share.instruction.p2: |
+    2.  Sostenga el teléfono en un<br/>
+    ángulo de 45 grados
+share.instruction.p3: |
+    3.  Compruebe que su maquillaje<br/>
+    luzca un aspecto natural <br/>y no sea excesivo
+
+share.form.title: Comparta su look a continuación
+share.form.name: Nombre completo
+share.form.location: Ciudad
+share.form.submit: Subir
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Pómulo
+practice.area.eye: Ojos
+practice.area.nose: Nariz
+practice.area.jawline: Mandíbula
+practice.area.bow: Arco de Cupido
+
+practice.tool.contour: Aplicar contorno
+practice.tool.highlight: Iluminar
+
+practice.tool.blend: MEZCLAR
+
+practice.instruction.p1: Dibujamos las líneas de contorno
+practice.instruction.p2: Mezclamos las líneas de contorno
+practice.instruction.p3: Aplicamos el lápiz Fresh Glow
+
+share.crop.heading: Recorte la imagen
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

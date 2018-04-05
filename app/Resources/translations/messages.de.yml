@@ -1,0 +1,131 @@
+login.form.username: Benutzername
+login.form.password: Kennwort
+login.form.login: Anmelden
+
+
+nav.product: Das<br/>Produkt
+nav.practice: Müheloses <br/>Konturieren und Strobing üben
+nav.share: Share<br/> your look
+
+home.intro: Wir präsentieren
+home.brand: Sculpt and Glow
+home.byline: Ihren Look <br/>teilen
+
+product.intro.p1: |
+    „Face Contour und Fresh Glow sind die perfekten,<br/>
+    mühelosen Produkte für das Konturieren und <br/>
+    ermöglichen ganz einfach einen Laufsteg-Look.“
+product.intro.p2: |
+    „Entdecken Sie vom Laufsteg inspirierte <br/>
+    Sculpting- und Strobing-Techniken <br/>
+    in der neuen Kollektion.“<br/>
+    <br/>
+product.sculpt.p1: |
+    „Der vom Laufsteg inspirierte Face Contour Pen, <br/>
+    entwickelt mit dem Sachverstand <br/>
+    von Make-up Artist Wendy Rowe, <br/>
+    schafft ganz natürlich perfekte<br/>
+    Gesichtsproportionen. <br/>
+    <br/>
+    Ich würde Ihnen das gerne vorführen. <br/>Es funktioniert ganz mühelos.“
+
+product.keywords: SCHLÜSSELWÖRTER
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: MÜHELOSES KONTURIEREN
+product.sculpt.keywords: Mühelos – Vermischbar – Langanhaltend
+
+product.glow.p1: |
+    „Ein müheloser Highlight-Stift für unterwegs –
+    präzises Strobing und Highlighten,<br/>
+    wann und wo immer Sie möchten.<br/>
+    Eine Ikone vom Laufsteg,<br/>
+    backstage verwendet von Wendy Rowe,<br/>
+    Burberry Make-up Artistic Consultant.“
+
+product.glow.intro.h2: GLANZ
+product.glow.intro.h3: MÜHELOSES STROBING GANZ EINFACH
+product.glow.keywords: Glow – Strobing ganz einfach
+
+product.tutorial.watch: Das Tutorial ansehen
+product.tutorial.a: Mit Charlotte
+product.tutorial.b: Mit Liu Ping
+product.shades.available: Erhältliche Farbtöne
+
+product.tutorial.a.step1: |
+    Entlang der natürlichen Konturen des Gesichts <br/> ein Dreieck zeichnen
+    und dann mit einem Pinsel oder den Fingerspitzen verwischen.
+
+product.tutorial.a.step2: |
+   Für einen tiefen, offenen Blick auf den inneren <br/>
+   Augenwinkel auftragen. So wirken die Augen größer.
+
+product.tutorial.a.step3: |
+    Auf den Amorbogen<br/>
+    auftragen für optisch<Br/>
+    vollere Lippen.
+
+product.tutorial.b.step1: |
+    Mit dem Contour Pen
+    auf dem Lid optisch eine Lidfalte kreieren und so dem Auge Definition und Tiefe verleihen.
+
+product.tutorial.b.step2: |
+    Das Gesicht V-förmig konturieren – <br/>
+    Face Contour seitlich am Wangenknochen nach unten bis zum <br/>
+    Kinnbereich auftragen.
+
+product.tutorial.b.step3: |
+    Mit dem Contour Pen
+    innen an den Augenbrauen ansetzen, um das Nasenbein V-förmig zu konturieren.
+
+share.intro: TEILEN SIE IHREN LOOK
+share.byline: Selfie-Galerie
+share.instruction.p0: Nachdem Sie nun viel über müheloses Konturieren und Strobing gelernt haben, üben Sie den Look und teilen Sie das Ergebnis in der Selfie-Galerie:
+share.instruction: Wendys Selfie-Tipps:
+share.instruction.p1: |
+    1. Sorgen Sie für gute Lichtverhältnisse 
+share.instruction.p2: |
+    2.  Halten Sie Ihr Telefon in einem<br/>
+    45-Grad-Winkel nach oben
+share.instruction.p3: |
+    3.  Vergewissern Sie sich, <br/>
+    dass Ihr Make-up natürlich aussieht <br/>
+    und nicht zu stark ist
+
+share.form.title: Teilen Sie unten Ihren Look
+share.form.name: Vollständiger Name
+share.form.location: Stadt
+share.form.submit: Hochladen
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Wangenknochen
+practice.area.eye: Auge
+practice.area.bow: Amorbogen
+practice.area.nose: Nase
+practice.area.jawline: Kinnbereich
+
+practice.tool.contour: Konturieren
+practice.tool.highlight: Highlighten
+
+practice.tool.blend: VERWISCHEN
+
+practice.instruction.p1: Konturlinien zeichnen
+practice.instruction.p2: Konturlinien verwischen
+practice.instruction.p3: Fresh Glow Pen auftragen
+
+share.crop.heading: Ihr Bild zuschneiden...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

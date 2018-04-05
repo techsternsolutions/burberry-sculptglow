@@ -1,0 +1,131 @@
+login.form.username: ユーザーネーム
+login.form.passord: パスワード
+login.form.login: ログイン
+
+
+nav.product: 商品
+nav.practice: コントゥアリング＆<br/>ストロービングを練習
+nav.share: 仕上がりを共有
+
+home.intro: ""
+home.brand: Sculpt and Glow
+home.byline: ランウェイにインスパイアされた<br/>エフォートレスな<br/>バーバリー流コントゥアリング。
+
+product.intro.p1: |
+    バーバリーでは、 手軽なコントゥアリングアイテムとして<br/>
+    Face Contour と Fresh Glow を開発しました。 <br/>
+    誰でもランウェイ風の仕上がりを簡単に手に入れられます
+product.intro.p2: |
+    「新アイテムを使って、ランウェイにインスパイアされた <br/>
+    スカルプティング＆ストロービングテクニックを <br/>
+    気軽に取り入れてみましょう」<br/>
+    <br/>
+product.sculpt.p1: |
+    「ランウェイにインスパイアされた <br/>
+    Face Contour ペンは、<br/>
+    ロウが 特別に開発したアイテムです。 ,<br/>
+    自然な陰影のある引き締まった<br/>
+    顔を演出します。 <br/>
+    <br/>
+    ぜひ使い方をご紹介させてください。 <br/>
+    とても簡単です」
+
+product.keywords: キーワード
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: エフォートレスなコントゥアリング
+product.sculpt.keywords: エフォートレス - なじみやすい - 持ちがよい
+
+product.glow.intro.h2: GLOW
+product.glow.intro.h3: エフォートレスなストロービングを手軽に
+product.glow.p1: |
+    「いつでもどこでも狙い通りのストロー<br/>
+    ビングが 決まるエフォートレスなアイテム。 <br/>
+    携帯に便利なペンタイプで、 <br/>
+    輝く肌を手軽に実現します。<br/>
+    ランウェイには欠かせないアイテムです。<br/>
+    コンサルタント、ウェンディ・ロウ」
+
+
+product.glow.keywords: グロウ - 手軽なストロービング
+
+product.tutorial.watch: チュートリアルを見る
+product.tutorial.a: モデル： シャーロット
+product.tutorial.b: モデル： リウ・ピン
+product.shades.available: カラー展開
+
+product.tutorial.a.step1: |
+    顔のカーブに沿って<br/>
+    三角形に入れると <br/>
+    自然な立体感が出ます。ブラシか指先でなじませてください。
+
+product.tutorial.a.step2: |
+    目頭に付けると目元の 印象がパッと明るくなります。
+    目を大きく見せる効果もあります。
+
+product.tutorial.a.step3: |
+    上唇中央の輪郭にの <br/>せると唇がふっくらとして見えます。
+
+product.tutorial.b.step1: |
+    目元の立体感を強調<br/>
+    するには、 コントゥア<br/>
+    ペンをアイホールの際に沿って引きます。
+
+product.tutorial.b.step2: |
+    V シェイプの引き締まったフェイスをつくるには、頬骨の横から顎のラインに向かって face contour<br/>
+    を入れます。
+
+product.tutorial.b.step3: |
+    今度は、眉頭から鼻筋に向かって逆三角形に<br/>いれます。
+
+share.intro: 仕上がりを共有
+share.byline: セルフィーギャラリー
+share.instruction.p0: 手軽なコントゥアリング＆ストロービングを練習し、セルフィーギャラリーでルックを共有しましょう：
+share.instruction: ウェンディのセルフィー・アドバイス：
+share.instruction.p1: |
+    1.ライティングを調節します。  
+share.instruction.p2: |
+    2.  2.スマートフォンを45度の <br/>
+    斜め上に構えます。
+share.instruction.p3: |
+   3.メイクアップは重すぎない<br/>
+    自然な仕上がりに。
+
+share.form.title: 写真をトリミング...
+share.form.name: フルネーム
+share.form.location: 都市
+share.form.submit: アップロード
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: 頬骨
+practice.area.eye: 目
+practice.area.bow: 上唇中央の輪郭
+practice.area.nose: 鼻
+practice.area.jawline: 顎のライン
+
+
+practice.tool.contour: コントゥア
+practice.tool.highlight: ハイライト
+
+practice.tool.blend: なじませる
+
+practice.instruction.p1: コントゥアラインを入れる
+practice.instruction.p2: コントゥアラインをなじませる
+practice.instruction.p3: Fresh Glow Penを使う
+
+share.crop.heading: 写真をトリミング...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

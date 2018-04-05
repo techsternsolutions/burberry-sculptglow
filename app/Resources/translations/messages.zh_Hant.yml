@@ -1,0 +1,124 @@
+login.form.username: 使用者名稱
+login.form.password: 密碼
+login.form.login: 登入
+
+
+nav.product: 商品
+nav.practice: 練習輕鬆 <br/> 修容與打亮
+nav.share: 分享 <br/> 您的妝容
+
+home.intro: 隆重推出
+home.brand: 雕塑與煥采
+home.byline: 探索 Burberry 輕鬆修容與打亮方法，靈感源自時裝秀。
+
+product.intro.p1: |
+    「我們獨家研發『自然光影修顏筆』<br/>
+    與『絲柔珠光亮彩筆』兩款修容彩妝品，可輕鬆塑造立體無暇妝感，<br/>
+    呈現經典時裝秀妝容。」
+product.intro.p2: |
+    「敬邀探索靈感源自時裝秀的 <br/>
+    立體輪廓妝容，運用全新美妝系列商品<br/>
+    輕鬆塑造自然妝感」<br/>
+    <br/>
+product.sculpt.p1: |
+    「靈感源自時裝秀的<br/>
+    臉部修容筆，由美妝師<br/>
+    Wendy Rowe 打造，<br>
+    能創造自然輪廓與 <br/>
+    臉部陰影。<br/>
+    <br/>
+    <br/>
+    我很樂意為您展示使用方式，<br/> 使用方式非常輕鬆簡單。」
+
+product.keywords: 關鍵詞
+
+product.sculpt.intro.h2: 雕塑
+product.sculpt.intro.h3: 輕鬆修容
+product.sculpt.keywords: 輕鬆上妝 - 可暈染 - 持久妝效
+
+product.glow.intro.h2: 煥采
+product.glow.intro.h3: 輕鬆塑造明亮煥采妝感
+product.glow.p1: |
+    「輕透自然、煥發光彩的便攜筆，
+    無論何時何地，只要您需要，
+    就能精確打亮，突顯肌膚光彩。
+    Burberry 美妝顧問 Wendy Rowe <br/>在時裝秀後台使用的經典商品」
+
+product.glow.keywords: 煥采 - 輕鬆塑造明亮煥采妝感
+
+product.tutorial.watch: 觀看示範影片
+product.tutorial.a: 與 Charlotte
+product.tutorial.b: 觀看示範影片
+product.shades.available: 色調選擇
+
+product.tutorial.a.step1: |
+    順著臉部自然輪廓畫<br/>
+    三角形– 再用彩妝刷<br/>
+    或指尖調和
+
+product.tutorial.a.step2: |
+    塗抹於眼角內側<br/>
+    以打亮雙眼，<br/>
+    創造深邃明亮大眼妝感。<br/>
+
+product.tutorial.a.step3: |
+    塗抹於唇部上緣，<br/>
+    唇部更顯飽滿。
+
+product.tutorial.b.step1: |
+    將修容筆塗抹在眼窩，突顯輪廓並創造立 <br/> 體感，打造深邃眼神。
+
+product.tutorial.b.step2: |
+    呈現 V 形臉龐 - 從顴骨側面開始向下至下顎，塗抹於臉部輪廓
+
+product.tutorial.b.step3: |
+    從眉毛起點開始描上修容筆，營造 V 形鼻樑。
+
+share.intro: 分享您的妝容
+share.byline: 自拍照片集
+share.instruction.p0: 您已學會如何輕鬆修容與提亮，請加以練習，並將您的彩妝成果分享至以下的自拍照片集：
+share.instruction: Wendy 的自拍秘訣：
+share.instruction.p1: |
+    1.確保光線充足
+share.instruction.p2: |
+    2.將手機上舉 45 度角
+share.instruction.p3: |
+    3.確保妝容自然不濃重
+
+share.form.title: 在下面分享您的妝容
+share.form.name: 全名
+share.form.location: 城市
+share.form.submit: 上傳
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: 顴骨
+practice.area.eye: 眼睛
+practice.area.bow: 唇部上緣
+practice.area.nose: 鼻樑
+practice.area.jawline: 下顎
+
+practice.tool.contour: 輪廓
+practice.tool.highlight: 突顯
+
+practice.tool.blend: 調和
+
+practice.instruction.p1: 描繪輪廓線
+practice.instruction.p2: 調和輪廓線
+practice.instruction.p3: 塗抹絲柔珠光筆
+
+share.crop.heading: 裁剪您的相片…
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

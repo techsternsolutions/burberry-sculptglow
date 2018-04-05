@@ -1,0 +1,138 @@
+login.form.username: имя пользователя
+login.form.password: пароль
+login.form.login: Вход
+
+
+nav.product: Косметические <br/> средства
+nav.practice: Для контурирования <br/> и цветокоррекции без усилий
+nav.share: Поделитесь<br/>своим образом
+
+home.intro: Новая концепция:
+home.brand: |
+    Скульптурирование
+    для достижения
+    эффекта сияния
+home.byline: |
+    Контурирование без усилий
+    в стиле Burberry
+
+product.intro.p1: |
+    Мы предлагаем средства для контурирования лица<br/>
+    Face Contour и Fresh Glow, которые позволяют <br/>
+    создать безупречный макияж в подиумном стиле.”
+product.intro.p2: |
+    Откройте для себя технику <br/>
+    контурирования и цветокоррекции<br/>
+    в стиле подиумного макияжа новой коллекции.<br/>
+    <br/>
+product.sculpt.p1: |
+    Карандаш Face Contour Pen разработан <br/>
+    Fвизажистом Венди Роу по мотивам<br/>
+    dподиумных показов для цвето-тональной<br/>
+    коррекции и придания естественного <br/>
+    цветового акцента. <br/>
+    <br/>
+    Этим методам очень легко научиться.”
+
+product.keywords: КЛЮЧЕВЫЕ СЛОВА
+
+product.sculpt.intro.h2: Скульптурирование
+product.sculpt.intro.h3: КОНТУРИРОВАНИЕ БЕЗ УСИЛИЙ
+product.sculpt.keywords: |
+    Легко наносится –
+    Идеально ложится –
+    Долго держится
+
+product.glow.intro.h2: Эффект сияния
+product.glow.intro.h3: ЦВЕТОКОРРЕКЦИЯ БЕЗ УСИЛИЙ
+product.glow.p1: |
+    Цветокоррекция и эффект сияния <br/>
+    без усилий с помощью уникального карандаша <br/>
+    в любое время и в любой обстановке. <br/>
+    Визажист и художественный консультант <br/>
+    Burberry Венди Роу использовала его <br/>
+    на всех модных показах.”
+
+product.glow.keywords: Светофокусирование — Цветокоррекция без усилий
+
+product.tutorial.watch: Предлагают видеоруководство:
+product.tutorial.a: Шарлотта
+product.tutorial.b: Лю Пин
+product.shades.available: Предлагаемые оттенки
+
+product.tutorial.a.step1: |
+    Нарисуйте треугольник,<br/>
+    следуя естественным<br/>
+    контурам лица, затем растушуйте кончиками пальцев или с помощью кисти.
+
+product.tutorial.a.step2: |
+    Нанесите на внутренние уголки глаз для придания глазам выразительности.
+    Такая техника визуально увеличит глаза.
+
+product.tutoriala.a.step3: |
+    Нанесите на губную дугу
+    для придания губам
+    дополнительного объема.
+
+product.tutorial.b.step1: |
+    Нанесите карандаш Contour Pen
+    на надбровные дуги для коррекции формы и цвета бровей.
+
+product.tutorial.b.step2: |
+    Создайте V-образный контур лица — нанесите контур от края скулы <br/>
+    по линии подбородка.
+
+product.tutorial.b.step3: |
+    Нарисуйте <br/>
+    V-образный контур, начиная от переносицы.
+
+share.intro: ПОДЕЛИТЕСЬ СВОИМ ОБРАЗОМ
+share.byline: Галерея селфи
+share.instruction.p0: Теперь, когда вы узнали о контурировании и цветокоррекции без усилий, примените знания на практике и поделитесь своим образом в галерее селфи:
+share.instruction: Советы Венди — как лучше сделать селфи:
+share.instruction.p1: |
+    1. Убедитесь в хорошем освещении. 
+share.instruction.p2: |
+    2.  Держите телефон над собой <br/>
+    под углом 45 градусов.
+share.instruction.p3: |
+    3.  Убедитесь в том, что ваш макияж<br/>
+    выглядит естественно и современно.
+
+share.form.title: Поделитесь своим образом
+share.form.name: Полное имя
+share.form.location: Город
+share.form.submit: Загрузить
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Скулы
+practice.area.eye: Глаза
+practice.area.bow: Губную дугу
+practice.area.nose: Нос
+practice.area.jawline: Линию подбородка
+
+practice.tool.contour: Контурирование
+practice.tool.highlight: Светофокусирование
+
+practice.tool.blend: РАСТУШУЙТЕ
+
+practice.instruction.p1: Нанесите контур
+practice.instruction.p2: Растушуйте контур
+practice.instruction.p3: Используйте карандаш Fresh Glow Pen
+
+share.crop.heading: Сегментация изображения...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

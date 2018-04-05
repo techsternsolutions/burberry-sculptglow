@@ -1,0 +1,44 @@
+---
+- name: "Install apache 2"
+  apt: pkg={{item}} state=installed update_cache=yes
+  sudo: yes
+  with_items:
+    - libapache2-mod-php5
+    - apache2
+
+- name: Check for default apache config
+  stat: path=/etc/apache2/sites-enabled/000-default.conf
+  register: st
+
+- name: Disable apache2 default site
+  command: rm /etc/apache2/sites-enabled/000-default.conf
+  sudo: yes
+  when: st.stat.exists == True
+  notify: 
+    - Restart Apache
+
+- name: Add sites
+  template:
+    src: site.conf.j2
+    dest: /etc/apache2/sites-available/{{ item.domain }}.conf
+  with_items: hosts
+
+- name: Add envvars conf
+  template:
+    src: envvars
+    dest: /etc/apache2/envvars
+
+- name: Activate mods
+  shell: /usr/sbin/a2enmod {{ item }}
+  sudo: yes
+  with_items:
+      - rewrite
+  notify: 
+    - Restart Apache
+
+- name: Activate the site
+  shell: /usr/sbin/a2ensite {{ item.domain }}
+  sudo: yes
+  with_items: hosts
+  notify: 
+    - Restart Apache

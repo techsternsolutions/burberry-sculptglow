@@ -1,0 +1,133 @@
+login.form.username: اسم المستخدم
+login.form.password: كلمة المرور
+login.form.login: كلمة المرور
+
+
+nav.product: المنتج
+nav.practice: مارسي تقنية نحت الوجه (الكونتورينغ)<br/> وتقنية الإضاءة (الستروبينغ) دون عناء
+nav.share: شاركي <br/> إطلالتك
+
+home.intro: تقديم
+home.brand: Sculpt and Glow
+home.byline: Sculpt and Glow، اكتشفي نحت الوجه دون عناء من <br/> Burberry، مستوحىً من عروض الأزياء.
+
+product.intro.p1: |
+    “لقد طورنا منتجي Face Contour<br/>
+    وFresh Glow للاستخدام دون عناء كمنتجات مثالية لنحت الوجه،<br/>
+    بحيث يمكن لأي شخص الحصول على نتائج مستوحاة من عروض الأزياء.”
+product.intro.p2: |
+    “اكتشفي التقنيات المستوحاة من عروض الأزياء<br/>
+    لنحت الوجه وإضاءته<br/>
+    مع المجموعة الجديدة<br/>
+    <br/>
+product.sculpt.p1: |
+   “قلم نحت الوجه Face contour<br/>
+    المستوحى عروض الأزياء، والذي تم تطويره من قِبل<br/>
+    خبيرة التجميل ”ويندي رو”،<br/>
+    والذي يساعد على تحديد ملامح الوجه<br/>
+    وظلاله بشكل طبيعي.<br/>
+    <br/>
+    <br/>
+    <br/>
+    ا
+    أحب أن أوضح لك كيفية عمل هذا. إنه سهل الاستعمال.”
+
+product.keywords: الكلمات الرئيسية
+
+product.sculpt.intro.h2: النحت
+product.sculpt.intro.h3: تحديد الوجه بدون عناء.
+product.sculpt.keywords: دون عناء - قابل للمزج - يدوم طويلاً
+
+product.glow.intro.h2: اللمعان
+product.glow.intro.h3: إضاءة الوجه المشرق دون عناء
+product.glow.p1: |
+    “قلم التألق دون عناء الذي
+    يزيد من تألقك مع إضاءة الوجه
+    وإبراز ملامحه بدقة متى وحيثما احتجتِ
+     إلى التألق. أيقونة عروض الأزياء المستخدمة خلف الكواليس
+    من قِبل ويندي رو، مستشارة التجميل الفنية
+     لدى Burberry”
+
+
+product.glow.keywords: اللمعان - إضاءة الوجه المشرق بسهولة
+
+product.tutorial.watch: شاهدوا الدرس التعليمي
+product.tutorial.a: ع Charlotte
+product.tutorial.b: مع Liu Ping
+product.shades.available: ظلان
+
+product.tutorial.b.step1: |
+    احصلي على إطلالة
+    لخط تجويف العينين عن طريق وضع قلم نحت الوجه Contour Pen في خط تجويف العينين، لتحديد ورسم الأبعاد.
+
+product.tutorial.b.step2: |
+    احصلي على وجه على شكل حرف V - ضعي منتج نحت الوجه بدءًا من جانب عظم الوجنتين نزولاً إلى خط الفك
+
+product.tutorial.b.step3: |
+    ابدأي
+    وضع قلم نحت الوجه من حيث تبدأ الحواجب للحصل على إطلالة على شكل حرف V لجسر الأنف.
+
+product.tutorial.a.step1: |
+    قومي برسم شكل مثلثي
+    متبعًة في ذلك
+     الملامح الطبيعية للوجه - ثم قومي بالمزج باستخدام فرشاة أو أصبع اليد
+
+product.tutorial.a.step2: |
+    ضعيه على الزاوية الداخلية للعينين لفتحهما وإشراقتهما. سوف يساعد المنتج على الحصول على إطلالة عينين أكثر اتساعًا.
+
+product.tutorial.a.step3: |
+    ضعيه على
+    قوس كيوبيد
+    للحصول على إطلالة مكتملة للشفتين.
+
+share.intro: شاركي إطلالتك
+share.byline: معرض صور السيلفي
+share.instruction.p0: والآن وبعد أن تعلمت تقنية نحت الوجه (الكونتورينغ) وتقنية الإضاءة (الستروبينغ) دون عناء، ما رأيك أن تمارسي ما تعلمته وتشاركينا إطلالتك في معرض صور السيلفي الموجود في الأسفل:
+share.instruction: نصائح ويندي عن أخذ صور السيلفي:
+share.instruction.p1: |
+    1. تأكدي من وجود إضاءة جيدة
+share.instruction.p2: |
+    2.  ضعي الهاتف في مستوى عالٍ
+    عند زاوية مقدارها 45 درجة
+
+share.instruction.p3: |
+    3.  تأكدي أن الماكياج يبدو
+    طبيعيًا وليس كثيفًا
+
+share.form.title: شاركي إطلالتك أدناه
+share.form.name: الاسم بالكامل
+share.form.location: المدينة
+share.form.submit: التحميل
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: عظمتا الوجنتين
+practice.area.eye: العين
+practice.area.bow: قوس كيوبيد
+practice.area.nose: الأنف
+practice.area.jawline: الفك
+
+practice.tool.contour: نحت الوجه
+practice.tool.highlight: إظهار
+
+practice.tool.blend: المزج
+
+practice.instruction.p1: ارسمي خطوط نحت الوجه
+practice.instruction.p2: امزجي خطوط نحت الوجه
+practice.instruction.p3: ضعي قلم Fresh Glow
+
+share.crop.heading: قُص صورتك...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

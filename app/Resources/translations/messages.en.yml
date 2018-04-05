@@ -1,0 +1,132 @@
+login.form.username: Username
+login.form.password: Password
+login.form.login: Login
+
+
+nav.product: The<br/> Product
+nav.practice: Practise Effortless<br/> Contouring & Strobing
+nav.share: Share<br/> your look
+
+home.intro: Introducing
+home.brand: Sculpt and Glow
+home.byline: Discover Burberry effortless contouring,<br/> inspired by the runway
+
+product.intro.p1: |
+    “We developed effortless Face Contour<br/>
+    and Fresh Glow as the perfect products for contouring, so<br/>
+    anyone can achieve runway-inspired results.”
+product.intro.p2: |
+    “Discover runway-inspired<br/>
+    techniques for sculpting and strobing<br/>
+    with the new collection”<br/>
+    <br/>
+product.sculpt.p1: |
+    “The Runway inspired<br/>
+    Face Contour Pen, expertly<br/>
+    developed by Make-up Artist Wendy Rowe,
+    creates natural definition and<br/>
+    shadow to the face.
+    I would love to show you how. It’s effortless.”
+
+product.keywords: KEY WORDS
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: EFFORTLESS CONTOURING
+product.sculpt.keywords: Effortless - Blendable - Longwear
+
+product.glow.intro.h2: GLOW
+product.glow.intro.h3: EFFORTLESS STROBING MADE EASY
+product.glow.p1: |
+    “An effortless, glow-to-go pen that<br/>
+    boosts radiance with precision strobing<br/>
+    and highlights when and where you need
+    them. A runway icon used backstage
+    by Wendy Rowe, Burberry Make-up's
+    Artistic Consultant”
+
+product.glow.keywords: Glow - Strobing made easy
+
+product.tutorial.watch: Watch the tutorial
+product.tutorial.a: With Charlotte
+product.tutorial.b: With Liu Ping
+product.shades.available: Shades available
+
+product.tutorial.a.step1: |
+    Draw a triangular<br/>
+    shape following the<br/>
+    natural contours of the<br/>
+    face – then blend using<br/>
+    brush or fingertips
+
+product.tutorial.a.step2: |
+    Apply on the inside<br/>
+    corner of the eyes to<br/>
+    open and brighten them.<br/>
+    It will help create bigger<br/>
+    wider eyes.
+
+product.tutorial.a.step3: |
+    Apply on the<br/>
+    cupid’s bow, to make<br/>
+    the lips look fuller.
+
+product.tutorial.b.step1: |
+    Create the illusion of <br/>
+    a socket line by applying the Contour Pen into the socket line, to define and create dimension.
+product.tutorial.b.step2: |
+    Create a V shaped face - apply the face contour starting from the side of the cheekbone down to the jawline
+product.tutorial.b.step3: |
+    Start applying the
+    contour pen from where the eyebrows begins to create a V shape for the nose bridge.
+
+share.intro: Share your look
+share.byline: Selfie Gallery
+share.instruction.p0: Now that you have learnt about effortless contouring and strobing, practise, and share your look in the selfie gallery below.
+share.instruction: Wendy’s Selfie Tips:
+share.instruction.p1: |
+    1. Ensure you have good lighting 
+share.instruction.p2: |
+    2.  Hold your phone above at<br/>
+    a 45 degree angle
+share.instruction.p3: |
+    3.  Ensure your make-up looks<br/>
+    natural and is not heavy
+
+share.form.title: Share your look below
+share.form.name: Your Name
+share.form.location: City
+share.form.submit: Upload
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Cheekbone
+practice.area.eye: Eye
+practice.area.bow: Cupids Bow
+practice.area.nose: Nose
+practice.area.jawline: Jawline
+
+practice.tool.contour: Contour
+practice.tool.highlight: Highlight
+
+practice.tool.blend: BLEND
+
+practice.instruction.p0: Select product below
+practice.instruction.p1: Draw contour lines
+practice.instruction.p2: Blend contour lines
+practice.instruction.p3: Apply Fresh Glow Pen
+
+share.crop.heading: Crop your image...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred

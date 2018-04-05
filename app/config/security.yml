@@ -1,0 +1,45 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
+    providers:
+        in_memory:
+            memory:
+                users:
+                    sculpt: { password: glow, roles: [ ROLE_USER ] }
+                    admin: { password: LEZoGtmW8Vb4NH, roles: [ ROLE_ADMIN, ROLE_USER ] }
+
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/locale, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin, roles: ROLE_ADMIN }
+        - { path: ^/, roles: ROLE_USER }
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        login_firewall:
+            pattern:   ^/login$
+            security: false
+
+        locale_firewall:
+            pattern:   ^/locale$
+            security: false
+
+        secured_area:
+            anonymous: ~
+            http_basic: ~
+            pattern:    ^/
+            provider: in_memory
+            logout:
+                path:   /logout
+                target: /
+            form_login:
+                login_path: login
+                check_path: login_check
+                use_referer: false
+                success_handler: login_success_handler

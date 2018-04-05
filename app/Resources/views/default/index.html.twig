@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block nav %}{% endblock %}
+
+{% block body %}
+<div class="col-md-6 col-sm-6">
+    <div class="heading">
+        <p>{% trans %}home.intro{% endtrans %}</p>
+        <h2>{% trans %}home.brand{% endtrans %}</h2>
+        <p>{% trans %}home.byline{% endtrans %}</p>
+    </div>
+
+    <div class="large-nav">
+        <a href="{{ path('product') }}">
+            <img src="{{ asset("bundles/app/images/i-product.png") }}">
+            {% trans %}nav.product{% endtrans %}
+        </a>
+
+        <a href="{{ path('practice') }}">
+            <img src="{{ asset("bundles/app/images/i-practice.png") }}">
+            {% trans %}nav.practice{% endtrans %}
+        </a>
+
+        <a href="{{ path('share') }}">
+            <img src="{{ asset("bundles/app/images/i-share.png") }}">
+            {% trans %}nav.share{% endtrans %}
+        </a>
+    </div>
+</div>
+{% endblock %}

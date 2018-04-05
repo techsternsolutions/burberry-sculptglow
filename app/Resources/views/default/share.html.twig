@@ -1,0 +1,147 @@
+{% extends 'base.html.twig' %}
+
+{% block viewport %}<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}share.intro{% endtrans %}</h1>
+
+    <h2 class="top-title">{% trans %}share.byline{% endtrans %}</h2>
+
+    <div class="row instructions">
+        <div class="col-sm-6 col-xs-12">
+            <img src="{{ asset('bundles/app/images/Wendy_Rowe.png') }}"/>
+        </div>
+        <div class="col-sm-6 col-xs-12 text">
+            <p>{% trans %}share.instruction.p0{% endtrans %}</p>
+            <span class="spacer"></span>
+            <p class="title">{% trans %}share.instruction{% endtrans %}</p>
+            <p>{% trans %}share.instruction.p1{% endtrans %}</p>
+            <p>{% trans %}share.instruction.p2{% endtrans %}</p>
+            <p>{% trans %}share.instruction.p3{% endtrans %}</p>
+        </div>
+    </div>
+
+    <h2>{% trans %}share.form.title{% endtrans %}</h2>
+
+    <div class="row action">
+        <a class="share" href="#"><img src="{{ asset('bundles/app/images/i-share-3.png') }}"></a>
+    </div>
+
+    <div id="selfie-modal" class="selfie" style="display: none">
+        <button type="button" id="submission_back" name="submission[back]" class="close-modal btn-close">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="selfie-form">
+            {{ form_start(picture, {'attr': {'class': 'form'} }) }}
+                {{ form_widget(picture) }}
+            {{ form_end(picture) }}
+
+            {{ form_start(submission, {
+                'action': path('selfie'),
+                'method': 'POST',
+                'attr': {'class': 'form'}
+            })}}
+                {{ form_widget(submission) }}
+            {{ form_end(submission) }}
+        </div>
+        <div id="selfie-wait">
+            <img src="/bundles/app/images/wait.gif" alt=""/>
+        </div>
+    </div>
+
+    <div class="row gallery">
+    {% for item in gallery %}
+        {% if loop.index > 1 %}<hr/>{% endif %}
+
+        <div class="row item {{ cycle(['even', 'odd'], loop.index0) }}">
+            <div class="col-sm-6 col-xs-12 image">
+                <img src="/uploads/{{ item.path }}"/>
+            </div>
+            <div class="col-sm-6 col-xs-12 details">
+                <div class="name">{{ item.name }}</div>
+                <div class="location">{{ item.location }}</div>
+                <div class="likes" data-action="{{ path('like', {id: item.id}) }}" data-key="{{ item.id }}">
+                    <i class="icon"></i>
+                    <span>{{ item.likes }}</span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+<script>
+$(function(){
+    var
+        $like = $('div.likes:not(.liked)'),
+        $images = $('.image > img'),
+        submitBtn = $('#submission_submit'),
+        locationInput = $('#submission_name'),
+        cityInput = $('#submission_location'),
+        likedItems = localStorage.getItem('burberry_liked') || "[]";
+        likedItems = JSON.parse(likedItems);
+
+    //Apply the hammer to elements we like to double tap.
+    $images.hammer();
+
+    $('div.likes').each(function(){
+        var $this = $(this);
+        if(likedItems.indexOf($this.data('key')) !== -1){
+            $this.addClass('liked');
+        }
+    });
+
+    submitBtn.prop('disabled', true);
+
+    $(document).on('change', '#selfie_picture', function () {
+        submitBtn.prop('disabled', false);
+    });
+
+    submitBtn.on('click', function (e) {
+
+        var preventSubmit = false;
+
+        if (locationInput.val() === '') {
+            locationInput.addClass('invalid');
+            preventSubmit = true;
+        } else {
+            locationInput.removeClass('invalid');
+        }
+
+        if (cityInput.val() === '') {
+            cityInput.addClass('invalid');
+            preventSubmit = true;
+        } else {
+            cityInput.removeClass('invalid');
+        }
+
+        if (preventSubmit) {
+            e.preventDefault();
+        }
+    });
+
+    //Catch double
+    $images.on('doubletap', function(){
+        $(this).closest('.row').find('div.likes:not(.liked)').click();
+    });
+
+    $like.on('click', function(e){
+        var $this = $(this);
+        if (likedItems.indexOf($this.data('key')) > -1) {
+            return false;
+        }
+
+        $.post($this.data('action'), function(r){
+            likedItems.push($this.data('key'));
+            localStorage.setItem('burberry_liked', JSON.stringify(likedItems));
+            $this.addClass('liked');
+            $this.find('span').html(r.likes);
+        });
+
+        e.preventDefault();
+    })
+});
+</script>
+{% endblock %}

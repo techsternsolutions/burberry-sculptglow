@@ -1,0 +1,137 @@
+login.form.username: nom d'utilisateur
+login.form.password: mot de passe
+login.form.login: Connexion
+
+
+nav.product: Le <br/>produit
+nav.practice: Entraînement: contouring <br/>et strobing faciles
+nav.share: Partagez <br/>votre look
+
+home.intro: Introduction
+home.brand: Sculpt and Glow
+home.byline: Découvrez le contouring selon Burberry, inspiré du défilé.
+
+product.intro.p1: |
+    « Face Contour et Fresh Glow <br/>
+    sont nos produits phare pour le contouring. <br/>
+    Ils offrent un résultat professionnel en un clin d'œil. »
+
+product.intro.p2: |
+    « Découvrez les techniques de contouring<br/>
+    et de strobing inspirées du défilé<br/>
+    grâce à notre nouvelle collection. »<br/>
+    <br/>
+product.sculpt.p1: |
+    « Le stylo Face Contour, inspiré des podiums <br/>
+    et mis au point par Wendy Rowe, <br/>
+    Directrice artistique Make-up Burberry, <br/>
+    dessine des contours précis <br/>
+    et effets ombrés naturels sur le visage.<br/>
+    <br/>
+    Je vais vous faire une démonstration.<br/>Il est particulièrement simple d'utilisation. »
+
+product.keywords: MOTS-CLÉS
+
+product.sculpt.intro.h2: SCULPT
+product.sculpt.intro.h3: LE CONTOURING SANS EFFORT
+product.sculpt.keywords: Simple d'utilisation – Facile à estomper – Longue durée
+
+product.glow.intro.h2: GLOW
+product.glow.intro.h3: LE STROBING EN TOUTE SIMPLICITÉ
+product.glow.p1: |
+    « Un stylo illuminateur à emporter partout avec vous<br/>
+    Il rehausse l'éclat en un simple geste et garantit <br/>
+    un strobing précis. Illuminez votre teint, <br/>
+    quand et où vous le souhaitez. Une icône des défilés, <br/>
+    utilisée en coulisse par Wendy Rowe, <br/>
+    Directrice artistique Make-up Burberry. »
+
+product.glow.keywords: Glow – le strobing en toute simplicité
+
+product.tutorial.watch: Regardez le tutoriel
+product.tutorial.a: Avec Charlotte
+product.tutorial.b: Avec Liu Ping
+product.shades.available: Teintes disponibles
+
+product.tutorial.a.step1: |
+    Dessinez une forme <br/>
+    triangulaire en suivant <br/>
+    les contours naturels <br/>
+    du visage. Puis estompez avec un pinceau <br/>
+    ou du bout des doigts.
+
+product.tutorial.a.step2: |
+    Appliquez dans le coin intérieur de l'œil pour ouvrir et illuminer <br/>
+    le regard. Cette technique agrandit les yeux.
+
+product.tutorial.a.step3: |
+    Appliquez sur<br/>
+    l'arc de Cupidon, <br/>
+    pour un effet lèvres pulpeuses.
+
+product.tutorial.b.step1: |
+    Ajoutez du relief
+    à votre regard <br/>
+    et définissez-le <br/>
+    en appliquant le stylo <br/>
+    le long du creux <br/>
+    sous l'arcade.
+
+product.tutorial.b.step2: |
+    Pour un visage en V, <br/>
+    appliquez Face Contour sur le côté des pommettes puis descendez le long <br/>
+    de la mâchoire.
+
+product.tutorial.b.step3: |
+    Appliquez le stylo de contouring <br/>
+    le long des sourcils, <br/>
+    à l'endroit où ils forment un V, en partant de l'arête du nez.
+
+share.intro: PARTAGEZ VOTRE LOOK
+share.byline: Galerie de selfies
+share.instruction.p0: Maintenant que vous en savez davantage sur le contouring et le strobing faciles, passez à la pratique et partagez votre look dans  la galerie de selfies ci-dessous :
+share.instruction: Conseils de Wendy pour un selfie réussi :
+share.instruction.p1: |
+    1. Assurez-vous que la lumière <br/>vous met en valeur  
+share.instruction.p2: |
+    2. Tenez votre téléphone au-dessus <br/>de votre visage à un angle de 45 degrés
+share.instruction.p3: |
+   3. Assurez-vous que votre maquillage
+
+share.form.title: Partagez votre look ci-dessous
+share.form.name: Prénom et nom
+share.form.location: Ville
+share.form.submit: Envoyer
+share.form.back: Back
+share.form.error.mime: Only images are allowed.
+share.form.error.size: The maxmimum allowed file size is 5MB.
+share.form.error.name.blank: Name is required
+share.form.error.location.blank: Location is required
+share.form.error.picture.blank: Selfie is required
+
+practice.area.cheekbone: Pommettes
+practice.area.eye: Yeux
+practice.area.bow: Arc de Cupidon
+practice.area.nose: Nez
+practice.area.jawline: Mâchoire
+
+practice.tool.contour: Contouring
+practice.tool.highlight: Effet illuminateur
+
+practice.tool.blend: ESTOMPEZ
+
+practice.instruction.p1: Dessinez les lignes de contour
+practice.instruction.p2: Estompez les lignes de contour
+practice.instruction.p3: Appliquez le stylo Fresh Glow
+
+share.crop.heading: Recadrez votre photo...
+
+error.page.h1: ERROR
+error.page.p: An error occurred
+error.page.back: Click here to return
+
+error.page404.h1: ERROR 404
+error.page404.p: The page cannot be found
+
+error.page500.h1: ERROR 500
+error.page500.p: Sorry an error has occurred
